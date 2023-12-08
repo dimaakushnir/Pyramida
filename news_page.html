@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" /> -->
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <title></title>
+</head>
+
+<body>
+    <!-- При пустому кошику потрібен клас empty -->
+    <div class="modal modal-basket">
+        <div class="modal__inner modal-basket__inner">
+            <a href="" class="modal__close modal-basket__close close"></a>
+            <div class="modal__body modal-basket__body">
+                <div class="modal-basket__top top-modal-basket">
+                    <div class="top-modal-basket__title-block">
+                        <span></span>
+                        <div class="top-modal-basket__title">Товари в кошику</div>
+                        <span></span>
+                    </div>
+                    <div class="top-modal-basket__message">У вашій корзині ще немає товарів</div>
+                </div>
+                <div class="modal-basket__main cart-products">
+                    <div class="cart-products__header">
+                        <div class="cart-products__header-item cart-products__header-item--product">Товар</div>
+                        <div class="cart-products__header-item cart-products__header-item--quantity">
+                            Кількість
+                        </div>
+                        <div class="cart-products__header-item cart-products__header-item--price">Ціна</div>
+                    </div>
+                    <div class="cart-products__body">
+                        <div class="cart-products__item">
+                            <div class="cart-product">
+                                <div class="cart-product__details">
+                                    <div class="cart-product__image-wrap">
+                                        <img class="cart-product__image" src="img/cooker-hoods/cooker-hoods-1/1.jpg"
+                                            alt="KH 60 RUSTICO IV">
+                                    </div>
+                                    <div class="cart-product__info-wrap">
+                                        KH 60 RUSTICO IV </div>
+                                </div>
+                                <div class="cart-product__price price-primary">
+                                    <div class="cart-product__cost">Ціна</div>
+                                    <div class="cart-product__cost-price">6129.00 грн</div>
+                                </div>
+                                <div class="cart-product__costs">
+                                    <div class="cart-product__quantity-title">Кількість</div>
+                                    <div class="cart-product__quantity">
+                                        <div class="cart-product__button-wrapper adaptive-left">
+                                            <button class="button-primary  minus"></button>
+                                        </div>
+                                        <input type="text" value="1">
+                                        <div class="cart-product__button-wrapper adaptive-right">
+                                            <button class="button-primary plus"></button>
+                                            <button style="display: none;" class="button-primary minus"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-product__controls-wrapper">
+                                    <div class="cart-product__price price-total">
+                                        <div class="cart-product__cost">Сума</div>
+                                        <div class="cart-product__cost-sum">6129.00 грн</div>
+                                    </div>
+                                    <div class="cart-product__controls">
+                                        <button class="remove">Видалити</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-product">
+                                <div class="cart-product__details">
+                                    <div class="cart-product__image-wrap">
+                                        <img class="cart-product__image" src="img/cooker-hoods/cooker-hoods-2/1.jpg"
+                                            alt="NR 60 M WH">
+                                    </div>
+                                    <div class="cart-product__info-wrap">
+                                        NR 60 M WH </div>
+                                </div>
+                                <div class="cart-product__price price-primary">
+                                    <div class="cart-product__cost">Ціна</div>
+                                    <div class="cart-product__cost-price">7709.00 грн</div>
+                                </div>
+                                <div class="cart-product__costs">
+                                    <div class="cart-product__quantity-title">Кількість</div>
+                                    <div class="cart-product__quantity">
+                                        <div class="cart-product__button-wrapper adaptive-left">
+                                            <button class="button-primary basket1 minus"></button>
+                                        </div>
+                                        <input type="text" value="1">
+                                        <div class="cart-product__button-wrapper adaptive-right">
+                                            <button class="button-primary plus"></button>
+                                            <button style="display:none" class="button-primary minus"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-product__controls-wrapper">
+                                    <div class="cart-product__price price-total">
+                                        <div class="cart-product__cost">Сума</div>
+                                        <div class="cart-product__cost-sum">7709.00 грн</div>
+                                    </div>
+                                    <div class="cart-product__controls">
+                                        <button class="remove">Видалити</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-basket__bottom bottom-modal-basket">
+                    <div class="bottom-modal-basket__row">
+                        <a href="" class="bottom-modal-basket__btn bottom-modal-basket__btn_continue btn close">
+                            <span>←</span><span>Продовжити покупки</span>
+                        </a>
+                        <div class="bottom-modal-basket__total total-bottom-modal-basket total">
+                            <span class="total-bottom-modal-basket__text total__text">На суму:</span>
+                            <span class="total-bottom-modal-basket__sum total__sum">0</span>
+                            <span class="total-bottom-modal-basket__currency total__currency">грн</span>
+                        </div>
+                        <a href="" class="bottom-modal-basket__btn bottom-modal-basket__btn_payment btn">
+                            <span>Оформити замовлення</span><span>→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-search">
+        <div class="modal__inner modal-search__inner">
+            <a href="" class="modal__close modal-search__close close"></a>
+            <div class="modal__body modal-search__body">
+                <div class="modal-search__top top-modal-search">
+                    <div class="top-modal-search__title">
+                        <span>Доброго дня, що ви шукаєте?</span>
+                    </div>
+                </div>
+                <div class="modal-search__main">
+                    <form action="#" class="modal-search__form form-modal-search">
+                        <div class="form-modal-search__item">
+                            <input placeholder="Введіть текст тут" autocomplete='off' type='text' name='form[]'
+                                class='form-modal-search__input'>
+                        </div>
+                        <button type='submit' class='form-modal-search__btn btn btn_violet'>
+                            <span>Пошук</span>
+                            <span>→</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-feedback">
+        <div class="modal__inner modal-feedback__inner">
+            <a href="" class="modal__close modal-feedback__close close"></a>
+            <div class="modal__body modal-feedback__body">
+                <div class="modal-feedback__top top-modal-feedback">
+                    <div class="top-modal-feedback__title-block">
+                        <span></span>
+                        <div class="top-modal-feedback__title">Форма зв'язку</div>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="modal-feedback__main">
+                    <form action="#" class="modal-feedback__form form-modal-feedback">
+                        <div class="form-modal-feedback__text">
+                            Місця, відмічені*, обов'язкові для заповнення
+                        </div>
+                        <div class="form-modal-feedback__item">
+                            <label for="formFeedbackName" class="form-modal-feedback__label">Ім'я*</label>
+                            <input required id="formFeedbackName" autocomplete='off' type='text' name='form[]'
+                                class='form-modal-feedback__input'>
+                        </div>
+                        <div class="form-modal-feedback__item">
+                            <label for="formFeedbackPhone" class="form-modal-feedback__label">
+                                Контактний телефон*
+                            </label>
+                            <input required id="formFeedbackPhone" placeholder="+38 (xxx) xxx-xx-xx" autocomplete='off'
+                                type='tel' name='form[]' class='form-modal-feedback__input tel'>
+                        </div>
+                        <div class="form-modal-feedback__item">
+                            <label for="formFeedbackEmail" class="form-modal-feedback__label">E-mail*</label>
+                            <input required id="formFeedbackEmail" autocomplete='off' type='email' name='form[]'
+                                class='form-modal-feedback__input'>
+                        </div>
+                        <div class="form-modal-feedback__item">
+                            <label for="formFeedbackMessage" class="form-modal-feedback__label">Повідомлення</label>
+                            <textarea name="form[]" id="formFeedbackMessage"
+                                class="form-modal-feedback__textatea"></textarea>
+                        </div>
+                        <div class="form-modal-feedback__item">
+                            <div class="form-modal-feedback__small-text">
+                                Підтвердіть, що Ви не робот.
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                        </div>
+                        <div class="form-modal-feedback__item">
+                            <div class="form-modal-feedback__small-text">
+                                <p>Додайте до повідомлення фото <span>чека покупки</span> техніки та фото
+                                    <span>гарантійного талону</span>.
+                                </p>
+                                <p>Ви можете додати максимум 5 файлів.</p>
+                                <p>Рекомендований розмір - менше 10 МБ.</p>
+                            </div>
+                            <div class="form-modal-feedback__bottom">
+
+                                <div class="form-modal-feedback__file file">
+                                    <div class="file__message">Ви вже добавили 5 файлів.</div>
+                                    <div class="file__body">
+                                        <input type='file' name='form[]' class='file__input'>
+                                        <div class="file__button btn btn_grey">
+                                            <span>Вкласти додаток</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type='submit' class='form-modal-feedback__btn btn btn_violet'>
+                                    <span>Надіслати</span>
+                                    <span>→</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-modal-feedback__previews file-previews"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__additionally additionally-header">
+        <div class="additionally-header__container container">
+            <div class="additionally-header__body">
+                <a href="" class="additionally-header__basket basket-icon open-modal-basket">
+                    <!-- При пустому кошику потрібен клас empty -->
+                    <span class="basket-icon__count">2</span>
+                    <span>Кошик</span>
+                </a>
+                <div class="additionally-header__call-back-block call-back-block">
+                    <a href="" class="call-back-block__close">
+                        <img src="img/icons/tel_close.png" alt="tel_close">
+                    </a>
+                    <div class="call-back-block__info info-call-back-block">
+                        <div class="info-call-back-block__schedule">Будні дні з 10:00 до 17:00</div>
+                        <div class="info-call-back-block__tel">
+                            <a href="tel:0800604463">0 800 604 463</a>
+                        </div>
+                        <div class="info-call-back-block__text">Гаряча лінія з питань сервісу</div>
+                    </div>
+                    <form action="" class="call-back-block__form form-call-back-block">
+                        <div class="form-call-back-block__text">
+                            Ви також можете замовити дзвінок і ми Вам зателефонуємо
+                        </div>
+                        <div class="form-call-back-block__item">
+                            <label for="CallBackTopic" class="form-call-back-block__label">Тема повідомлення</label>
+                            <div class="form-call-back-block__dropdown dropdown">
+                                <button class='dropdown__button button-dropdown'>
+                                    <span class="button-dropdown__text">Купівля</span>
+                                    <div class="button-dropdown__trigger trigger-button-dropdown">
+                                        <div class="trigger-button-dropdown__arrow"></div>
+                                    </div>
+                                </button>
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__list-item selected" data-dropdown="Купівля">Купівля</li>
+                                    <li class="dropdown__list-item" data-dropdown="Сервіс">Сервіс</li>
+                                </ul>
+                                <input id="CallBackTopic" type='text' name='form[]' value='Купівля'
+                                    class='dropdown__input-hidden'>
+                            </div>
+                        </div>
+                        <div class="form-call-back-block__item">
+                            <label for="CallBackName" class="form-call-back-block__label">Ім'я</label>
+                            <input id="CallBackName" autocomplete='off' type='text' name='form[]'
+                                class='form-call-back-block__input'>
+                        </div>
+                        <div class="form-call-back-block__item">
+                            <label for="CallBackTel" class="form-call-back-block__label">Контактний телефон</label>
+                            <input id="CallBackTel" placeholder="+38 (xxx) xxx-xx-xx" autocomplete='off' type='tel'
+                                name='form[]' class='form-call-back-block__input tel'>
+                        </div>
+                        <hr>
+                        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                        <div class="form-call-back-block__block">
+                            <button type='submit' class='form-call-back-block__btn btn btn_violet'>Замовити
+                                дзвінок</button>
+                        </div>
+                    </form>
+                    <div class="call-back-block__message">
+                        <span>
+                            Ми зателефонуємо Вам найближчикм часом та обов’язково допоможемо з вибором найкращої техніки
+                        </span>
+                        <br><br>
+                        <img src="../img/icons/tel_smile.png" alt="tel_smile">
+                    </div>
+                </div>
+                <div class="additionally-header__call-back-button">
+                    <span>Замовити дзвінок</span>
+                </div>
+                <div class="additionally-header__schedule">Будні дні з 10:00 до 17:00</div>
+            </div>
+        </div>
+    </div>
+    <div class="header__top top-header">
+        <div class="top-header__container container">
+            <div class="top-header__body">
+                <div class="top-header__row">
+                    <nav class="top-header__menu menu-top-header" data-da="mobile-header__last-menu, 0, 767.98">
+                        <ul class="menu-top-header__list">
+                            <li class="menu-top-header__item">
+                                <a href="" class="menu-top-header__link">Про бренд</a>
+                            </li>
+                            <li class="menu-top-header__item">
+                                <a href="news.html" class="menu-top-header__link">Новини</a>
+                            </li>
+                            <li class="menu-top-header__item">
+                                <a href="" class="menu-top-header__link">Сервіс</a>
+                            </li>
+                            <li class="menu-top-header__item">
+                                <a href="" class="menu-top-header__link">Де купити</a>
+                            </li>
+                            <li class="menu-top-header__item">
+                                <a href="" class="menu-top-header__link">Партнерство</a>
+                            </li>
+                            <li class="menu-top-header__item">
+                                <a href="" class="menu-top-header__link">Доставка та оплата</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="top-header__navigation-icons navigation-icons-top-header"
+                        data-da="tollbar-header__inner, 0, 991.98">
+                        <ul class="navigation-icons-top-header__items">
+                            <li class="navigation-icons-top-header__item">
+                                <a href=""
+                                    class="navigation-icons-top-header__link navigation-icons-top-header__link_search open-modal-search">Пошук</a>
+                            </li>
+                            <li class="navigation-icons-top-header__item">
+                                <a href=""
+                                    class="navigation-icons-top-header__link navigation-icons-top-header__link_basket basket-icon open-modal-basket">
+                                    <!-- При пустому кошику потрібен клас empty -->
+                                    <span class="basket-icon__count">2</span>
+                                    <span>Кошик</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__toolbar tollbar-header">
+        <div class="tollbar-header__container container">
+            <div class="tollbar-header__body">
+                <div class="tollbar-header__row">
+                    <div class="tollbar-header__logo-block">
+                        <a href="index.html" class="tollbar-header__logo">
+                            <img src="img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="tollbar-header__inner">
+                        <nav class="tollbar-header__menu menu-tollbar-header"
+                            data-da="mobile-header__first-menu, 0, 991.98">
+                            <ul class="menu-tollbar-header__list">
+                                <li class="menu-tollbar-header__item has-submenu">
+                                    <a href="" class="menu-tollbar-header__link">Витяжки</a>
+                                    <div class="menu-tollbar-header__sub-menu sub-menu">
+                                        <div class="sub-menu__top top-sub-menu">
+                                            <button class="top-sub-menu__back">
+                                                <img src="img/icons/arrow_back.png" alt="arrow_back">
+                                            </button>
+                                            <div class="top-sub-menu__title">Витяжки</div>
+                                            <div class="mobile-header__close"></div>
+                                        </div>
+                                        <div class="sub-menu__baner">
+                                            <img src="img/cooker-hoods/baner.jpg" alt="cooker-hoods">
+                                        </div>
+                                        <div class="sub-menu__body">
+                                            <div class="sub-menu__row">
+                                                <div class="sub-menu__column sub-menu__column_links">
+                                                    <div class="sub-menu__title">
+                                                        <span>Тип</span>
+                                                    </div>
+                                                    <nav class="sub-menu__menu">
+                                                        <ul class="sub-menu__list">
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>Усі моделі</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>Вертикальні</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>Похилі</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>Декоративні</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>Купольні</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>Вбудовувані</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>Плоскі</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                                <div class="sub-menu__column sub-menu__column_images">
+                                                    <div class="sub-menu__images images-sub-menu">
+                                                        <div class="images-sub-menu__row">
+                                                            <div class="images-sub-menu__column">
+                                                                <div class="images-sub-menu__item">
+                                                                    <a href="" class="images-sub-menu__link">
+                                                                        <img src="img/cooker-hoods/1.png"
+                                                                            alt="cooker-hood">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="images-sub-menu__column">
+                                                                <div class="images-sub-menu__item">
+                                                                    <a href="" class="images-sub-menu__link">
+                                                                        <img src="img/cooker-hoods/2.png"
+                                                                            alt="cooker-hood">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="images-sub-menu__column">
+                                                                <div class="images-sub-menu__item">
+                                                                    <a href="" class="images-sub-menu__link">
+                                                                        <img src="img/cooker-hoods/3.png"
+                                                                            alt="cooker-hood">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-tollbar-header__item has-submenu">
+                                    <a href="" class="menu-tollbar-header__link">Варильні поверхні</a>
+                                    <div class="menu-tollbar-header__sub-menu sub-menu">
+                                        <div class="sub-menu__top top-sub-menu">
+                                            <button class="top-sub-menu__back">
+                                                <img src="img/icons/arrow_back.png" alt="arrow_back">
+                                            </button>
+                                            <div class="top-sub-menu__title">Варильні поверхні</div>
+                                            <div class="mobile-header__close"></div>
+                                        </div>
+                                        <div class="sub-menu__baner">
+                                            <img src="img/cooking-surfaces/baner.jpg" alt="cooking-surfaces">
+                                        </div>
+                                        <div class="sub-menu__body">
+                                            <div class="sub-menu__row">
+                                                <div class="sub-menu__column sub-menu__column_links">
+                                                    <div class="sub-menu__title">
+                                                        <span>Тип</span>
+                                                    </div>
+                                                    <nav class="sub-menu__menu">
+                                                        <ul class="sub-menu__list">
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>Усі моделі</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>Індукційні</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>Електричні</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>Газові</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>Комбіновані</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                                <div class="sub-menu__column sub-menu__column_images">
+                                                    <div class="sub-menu__images images-sub-menu">
+                                                        <div class="images-sub-menu__row">
+                                                            <div class="images-sub-menu__column">
+                                                                <div class="images-sub-menu__item">
+                                                                    <a href="" class="images-sub-menu__link">
+                                                                        <img src="img/cooking-surfaces/1.jpg"
+                                                                            alt="cooking-surfaces">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="images-sub-menu__column">
+                                                                <div class="images-sub-menu__item">
+                                                                    <a href="" class="images-sub-menu__link">
+                                                                        <img src="img/cooking-surfaces/2.jpg"
+                                                                            alt="cooking-surfaces">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="images-sub-menu__column">
+                                                                <div class="images-sub-menu__item">
+                                                                    <a href="" class="images-sub-menu__link">
+                                                                        <img src="img/cooking-surfaces/3.jpg"
+                                                                            alt="cooking-surfaces">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-tollbar-header__item has-submenu">
+                                    <a href="" class="menu-tollbar-header__link">Духові шафи</a>
+                                    <div class="menu-tollbar-header__sub-menu sub-menu">
+                                        <div class="sub-menu__top top-sub-menu">
+                                            <button class="top-sub-menu__back">
+                                                <img src="img/icons/arrow_back.png" alt="arrow_back">
+                                            </button>
+                                            <div class="top-sub-menu__title">Духові шафи</div>
+                                            <div class="mobile-header__close"></div>
+                                        </div>
+                                        <div class="sub-menu__baner">
+                                            <img src="img/ovens/baner.jpg" alt="ovens">
+                                        </div>
+                                        <div class="sub-menu__body">
+                                            <div class="sub-menu__row">
+                                                <div class="sub-menu__column sub-menu__column_links">
+                                                    <div class="sub-menu__title">
+                                                        <span>Тип</span>
+                                                    </div>
+                                                    <nav class="sub-menu__menu">
+                                                        <ul class="sub-menu__list">
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>Усі моделі</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>4-режимні</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>5-режимні</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>6-режимні</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>7-режимні</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>8-режимні</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>9-режимні</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>10-режимні</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>18-режимні</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                                <div class="sub-menu__column sub-menu__column_images">
+                                                    <div class="sub-menu__images images-sub-menu">
+                                                        <div class="images-sub-menu__row">
+                                                            <div class="images-sub-menu__column">
+                                                                <div class="images-sub-menu__item">
+                                                                    <a href="" class="images-sub-menu__link">
+                                                                        <img src="img/ovens/1.jpg" alt="ovens">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="images-sub-menu__column">
+                                                                <div class="images-sub-menu__item">
+                                                                    <a href="" class="images-sub-menu__link">
+                                                                        <img src="img/ovens/2.jpg" alt="ovens">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="images-sub-menu__column">
+                                                                <div class="images-sub-menu__item">
+                                                                    <a href="" class="images-sub-menu__link">
+                                                                        <img src="img/ovens/3.jpg" alt="ovens">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-tollbar-header__item">
+                                    <a href="" class="menu-tollbar-header__link">Посудомийні машини</a>
+                                </li>
+                                <li class="menu-tollbar-header__item">
+                                    <a href="" class="menu-tollbar-header__link">Мікрохвильові печі</a>
+                                </li>
+                                <li class="menu-tollbar-header__item has-submenu">
+                                    <a href="" class="menu-tollbar-header__link">Аксесуари</a>
+                                    <div class="menu-tollbar-header__sub-menu sub-menu">
+                                        <div class="sub-menu__top top-sub-menu">
+                                            <button class="top-sub-menu__back">
+                                                <img src="img/icons/arrow_back.png" alt="arrow_back">
+                                            </button>
+                                            <div class="top-sub-menu__title">Аксесуари</div>
+                                            <div class="mobile-header__close"></div>
+                                        </div>
+                                        <div class="sub-menu__baner">
+                                            <img src="img/accessories/baner.jpg" alt="accessories">
+                                        </div>
+                                        <div class="sub-menu__body">
+                                            <div class="sub-menu__row">
+                                                <div class="sub-menu__column sub-menu__column_links">
+                                                    <div class="sub-menu__title">
+                                                        <span>Тип</span>
+                                                    </div>
+                                                    <nav class="sub-menu__menu">
+                                                        <ul class="sub-menu__list">
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>Усі моделі</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>Для витяжок</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>Для поверхонь</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>Захисні приладдя</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu__item">
+                                                                <a href="" class="sub-menu__link">
+                                                                    <span>Пароварка</span>
+                                                                    <span>→</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                                <div class="sub-menu__column sub-menu__column_images">
+                                                    <div class="sub-menu__images images-sub-menu">
+                                                        <div class="images-sub-menu__row">
+                                                            <div class="images-sub-menu__column">
+                                                                <div class="images-sub-menu__item">
+                                                                    <a href="" class="images-sub-menu__link">
+                                                                        <img src="img/accessories/1.jpg"
+                                                                            alt="accessories">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="images-sub-menu__column">
+                                                                <div class="images-sub-menu__item">
+                                                                    <a href="" class="images-sub-menu__link">
+                                                                        <img src="img/accessories/2.png"
+                                                                            alt="accessories">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="images-sub-menu__column">
+                                                                <div class="images-sub-menu__item">
+                                                                    <a href="" class="images-sub-menu__link">
+                                                                        <img src="img/accessories/3.png"
+                                                                            alt="accessories">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="tollbar-header__burger">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="mobile-header">
+    <div class="mobile-header__container container">
+        <div class="mobile-header__body">
+            <a href="" class="mobile-header__close"></a>
+            <div class="mobile-header__top">
+                <div class="mobile-header__lang lang-mobile-header">
+                    <ul class="lang-mobile-header__list">
+                        <li class="lang-mobile-header__item">
+                            <a href="" class="lang-mobile-header__link">рус</a>
+                        </li>
+                        <li class="lang-mobile-header__item">
+                            <a href="" class="lang-mobile-header__link active">укр</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mobile-header__first-menu"></div>
+            <div class="mobile-header__last-menu"></div>
+            <div class="mobile-header__bottom">
+                <div class="modal-search__top top-modal-search">
+                    <div class="top-modal-search__title">
+                        <span>Доброго дня, що ви шукаєте?</span>
+                    </div>
+                </div>
+                <div class="modal-search__main">
+                    <form action="#" class="modal-search__form form-modal-search">
+                        <div class="form-modal-search__item">
+                            <input placeholder="Введіть текст тут" autocomplete='off' type='text' name='form[]'
+                                class='form-modal-search__input'>
+                        </div>
+                        <button type='submit' class='form-modal-search__btn btn btn_violet'>
+                            <span>Пошук</span>
+                            <span>→</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__container container">
+                <div class="breadcrumbs__body">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">Головна</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="news.html" class="breadcrumbs__link">Новини</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span>Пригощала американців борщем з пампушками та співала повстанських пісень</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <main role="main">
+            <div class="scroll-top scroll-top-fixed"></div>
+            <section class="page-news">
+                <div class="page-news__title-block">
+                    <div class="page-news__container container">
+                        <div class="page-news__body">
+                            <div class="page-news__inner">
+                                <h2 class="page-news__title title-h2">
+                                    ПРИГОЩАЛА АМЕРИКАНЦІВ БОРЩЕМ З ПАМПУШКАМИ ТА СПІВАЛА ПОВСТАНСЬКИХ ПІСЕНЬ
+                                </h2>
+                                <div class="page-news__date">24 листопада 2023</div>
+                                <div class="page-news__text">
+                                    <p>
+                                        За тисячі кілометрів за кордоном чи за сотні в іншій області. В укритті чи в
+                                        окопі. І коли
+                                        серце на шмаття, і навіть коли тримаємось. Де б не були і як би не почувались.
+                                        Нам всім так
+                                        не вистачає такого до щему знайомого з пахощами часничку чи хрускотом кавунчика
+                                        "Смаку
+                                        дому".
+                                    </p>
+                                    <p>
+                                        Героїня цього випуску мала всі можливості працювати за кордоном, але обрала
+                                        Україну. Вона
+                                        виросла на Донбасі і має родичів на Кубані, але виплекала в собі українку.
+                                        Говорить про
+                                        Україну по всьому світу, але найбільший кайф — то опісля дорога додому.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="page-news__content">
+                    <div class="page-news__container container">
+                        <div class="page-news__body">
+                            <div class="page-news__inner">
+                                <div class="page-news__text">
+                                    <p>
+                                        Настя Попандопулос — відома PR-ниця, авторка подкасту "Кучерявий PR", волонтерка
+                                        інформаційного фронту і співзасновниця проекту PR army, завдяки якому з перших
+                                        годин великої війни світ дізнавався і продовжує дізнаватись про злочини росіян.
+                                        А найбільше мріє про звільнення рідної Луганщини, щоб знову відчути отой
+                                        найрідніший смак дому.
+                                    </p>
+                                </div>
+                                <div class="page-news__text page-news__text_bold">
+                                    <p>
+                                        — Настю, ви не виїхали з України після початку великої війни. Хоча до того дуже
+                                        багато подорожували і були людиною світу. Що найбільше вплинуло на ваше рішення?
+                                        Адже ваша діяльність була б не менш продуктивною, якби ви були за кордоном.
+                                    </p>
+                                </div>
+                                <div class="page-news__text">
+                                    <p>
+                                        — За іронією долі до лютого 2022 я отримала без перебільшення перспективну
+                                        пропозицію роботи на Близькому Сході. І відмовилась через частковий російський
+                                        вплив на компанію. Я не свята. Виросла на Донбасі, маю родичів на Кубані. І мій
+                                        шлях до усвідомлення себе українкою не був простим.
+                                    </p>
+                                    <p>
+                                        Переконана, що після початку повномасштабного вторгнення саме тут, в Україні, як
+                                        ніде більше, гостро відчувається одночасно смерть та життя. В найжахливіші дні я
+                                        відчувала себе максимально впевнено саме в Україні. Зараз розумію, що ризики для
+                                        життя під час окупації Києва були достатньо високі. Але не думаю, що я б обрала
+                                        інший шлях. Мої пращури декілька поколінь переслідуються росіянами. Не вважаю
+                                        себе фаталісткою. Але, здається, від долі не втечеш.
+                                    </p>
+                                    <p>
+                                        З одного боку про власну безпеку турбуватись потрібно. А з іншого — відчайдушний
+                                        подвиг наших воїнів, без яких, мабуть, не було б вже незалежної Україні.
+                                    </p>
+                                </div>
+                                <div class="page-news__text page-news__text_bold">
+                                    <p>
+                                        — Настя Попандопулос до і після 24 лютого?
+                                    </p>
+                                </div>
+                                <div class="page-news__text">
+                                    <p>
+                                        — Я не змінилась. Але сама для себе стала відкриттям. Не знала, що в кризових
+                                        ситуаціях я шалено ефективна.
+                                    </p>
+                                    <p>
+                                        Вважаю себе відчайдушною, а люди кажуть — смілива.
+                                    </p>
+                                    <p>
+                                        Зрозуміла, що отримую більше задоволення від роботи в соціальній сфері, ніж в
+                                        бізнесі.
+                                    </p>
+                                    <p>
+                                        А ще почала більше турбуватись про себе. Відчуваю свої ліміти, не доводжу себе
+                                        до крайніх станів. Багато опікуюсь своїм ментальним здоровʼям. Не йду у токсичні
+                                        стосунки.
+                                    </p>
+                                    <p>
+                                        Проте, ніяк не можу здихатись комплексу самозванця. Постійно дивуюсь, коли мною
+                                        цікавляться та захоплюються. Бо завжди здається, що можна було більше і краще.
+                                    </p>
+                                </div>
+                                <div class="page-news__image">
+                                    <img src="img/news-page//01.jpg" alt="news-img">
+                                </div>
+                                <div class="page-news__text page-news__text_bold">
+                                    <p>
+                                        — "Сонце не може вигоріти", — написали ви після півроку повномасштабного
+                                        вторгнення. А як зараз?
+                                    </p>
+                                </div>
+                                <div class="page-news__text">
+                                    <p>
+                                        — Сонце дійсно не може вигоріти, але спалити поруч з собою оточуючих може, —
+                                        іронізує Настя. — Займаюсь іпотерапією та кінним спортом. Це допомагає знаходити
+                                        відповіді, заспокоює.
+                                    </p>
+                                    <p>
+                                        Мрію, щоб цей вид терапії став більш доступним для дітей та дорослих,
+                                        постраждалих від війни та ветеранів, зараз з партнеркою втілюємо це в
+                                        реальність. Це буде новий проект.
+                                    </p>
+                                </div>
+                                <div class="page-news__image">
+                                    <img src="img/news-page//02.jpg" alt="news-img">
+                                </div>
+                                <div class="page-news__text page-news__text_bold">
+                                    <p>
+                                        — Ви працюєте над адвокацією України в світі. Нещодавно були в Америці. Чи була
+                                        нагода пригостити національними стравами американських друзів та партнерів?
+                                    </p>
+                                </div>
+                                <div class="page-news__text">
+                                    <p>
+                                        — Так, обовʼязково. Адже це ще одна можливість познайомити їх з Україною,
+                                        показати справжню українську душу і культуру. Щиру, щедру, особливу. Та й самій
+                                        відчути смак дому.
+                                    </p>
+                                    <p>
+                                        Саме тому американців годувала традиційним українським борщем з пампушками,
+                                        салом та, — Настя робить паузу. — … польською водкою.
+                                    </p>
+                                </div>
+                                <div class="page-news__text page-news__text_bold">
+                                    <p>
+                                        — Польською?
+                                    </p>
+                                </div>
+                                <div class="page-news__text">
+                                    <p>
+                                        — Яка була вдома у американців, таку і пили, — не приховує дівчина. — А ще
+                                        співала їм повстанських пісень. Адже справжнє українське застілля важко уявити
+                                        без співів. Були просто у захваті. Сподіваюсь змогла передати їм смак нашого з
+                                        вами дому.
+                                    </p>
+                                </div>
+                                <div class="page-news__image">
+                                    <img src="img/news-page//03.jpg" alt="news-img">
+                                </div>
+                                <div class="page-news__text page-news__text_bold">
+                                    <p>
+                                        — Багато ваших споминів про бабусю. Ви носите плетену нею безрукавку. А згадка
+                                        про яку страву нагадує вам про бабусю?
+                                    </p>
+                                </div>
+                                <div class="page-news__text">
+                                    <p>
+                                        — Бабуся по маминій лінії жила в Луганській області. Зараз це окупована
+                                        територія.
+                                    </p>
+                                    <p>
+                                        Незважаючи на добре серце та витончену красу, бабуся Катя відрізнялась незламним
+                                        духом та працьовитістю.
+                                    </p>
+                                    <p>
+                                        Для мене вона про родинне тепло і затишок, який вона могла створити. Завжди
+                                        пам'ятатиму пахощі пасочок на її кухні. І її випічка, і смачнюща кутя викликають
+                                        в мене особливі почуття. Квашена капуста та мариновані помідори — це справді те,
+                                        що мрію забрати, коли ці землі звільнять. Також в її погребі залишилось
+                                        неймовірне полуничне та черешневе варення з саду. Сподіваюсь, вони дочекаються
+                                        мене там. І я зможу знову відчути цей смак дому.
+                                    </p>
+                                </div>
+                                <div class="page-news__image">
+                                    <img src="img/news-page//04.jpg" alt="news-img">
+                                </div>
+                                <div class="page-news__text page-news__text_bold">
+                                    <p>
+                                        — Херсон — це кавуни, Мелітополь — черешні, Крим — найсмачніші чебуреки. Після
+                                        окупації ви виїхали з Луганська. Про що традиційно луганське мрієте після
+                                        звільнення та перемоги?
+                                    </p>
+                                </div>
+                                <div class="page-news__text">
+                                    <p>
+                                        — Луганщина завжди асоціювалась в мене з шахтарськими териконами, важкою роботою
+                                        та запахом хліба. Бо батько займався хлібобулочними виробами. А пахло від нього
+                                        хлібом та потом.
+                                    </p>
+                                </div>
+                                <div class="page-news__text page-news__text_bold">
+                                    <p>
+                                        — Настю, ви маєте грецькі корені. Як поєднуються у вашій сім'ї дві культури, в
+                                        тому числі і гастрономічні.
+                                    </p>
+                                </div>
+                                <div class="page-news__text">
+                                    <p>
+                                        — Мої пращури греки по татовій лінії привезли культуру вирощування та переробку
+                                        тютюну на Південь Росії. В 1937 році проводили арешти всіх греків, підозрюваних
+                                        у шпигунській, диверсійній, повстанській та націоналістській антирадянській
+                                        роботі, пів моєї сімʼї розстріляли або відправили у Азійські степи. На жаль,
+                                        грецька культура або кухня не найсильніша сторона батька. Він передав мені від
+                                        наших греків стальний характер та працьовитість. Вже пізніше у дорослому віці я
+                                        закохалась у середземноморську кухню. Обожнюю свіжу рибу, фету та дзадзикі.
+                                    </p>
+                                </div>
+                                <div class="page-news__text page-news__text_bold">
+                                    <p>
+                                        — Які ваші стосунки з кухнею?
+                                    </p>
+                                </div>
+                                <div class="page-news__text">
+                                    <p>
+                                        — Для мене процес приготування їжі — це більше про турботу, про прояв уваги до
+                                        тих, хто цього потребує.
+                                    </p>
+                                    <p>
+                                        Я гарно готую. Але для мене це не повсякденна рутина, а щось значно більше.
+                                    </p>
+                                </div>
+                                <div class="page-news__image">
+                                    <img src="img/news-page//05.jpg" alt="news-img">
+                                </div>
+                                <div class="page-news__text page-news__text_bold">
+                                    <p>
+                                        — Вдома чи в ресторані?
+                                    </p>
+                                </div>
+                                <div class="page-news__text">
+                                    <p>
+                                        — Залежить від того, де я знаходжусь. Якщо за кордоном, то переважно готую сама.
+                                        Це як спосіб створити острівець батьківщини навіть за тисячі кілометрів. Та й,
+                                        давайте відверто, так смачно готують лише в українських ресторанах.
+                                    </p>
+                                    <p>
+                                        А рівень сервісу? І як би це парадоксально не звучало, але навіть під час війни
+                                        ми спостерігаємо новий виток розвитку гастрономічної культури. Українці
+                                        неймовірні.
+                                    </p>
+                                </div>
+                                <div class="page-news__text page-news__text_bold">
+                                    <p>
+                                        — З перших днів повномасштабної війни ви та PR army говорите про Україну по
+                                        всьому світі. Як гадаєте, популяризація української кухні нашими жінками є
+                                        частиною промоції?
+                                    </p>
+                                </div>
+                                <div class="page-news__text">
+                                    <p>
+                                        — На жаль, до великої війни багато іноземців і гадки не мали, де знаходиться
+                                        Україна. Ба більше, до сих пір росіяни по світу готують наші українські страви,
+                                        називаючи їх російськими.
+                                    </p>
+                                    <p>
+                                        Думаю, що популяризація української кухні нашими жінками та чоловіками — це
+                                        насправді частина дипломатичної діяльності міністерства закордонних справ, якщо
+                                        хочете.
+                                    </p>
+                                    <p>
+                                        А ще це можливість, де б ви не були згадати отой самий смак рідного дому,
+                                        передати українські традиції, розповісти про Україну своїм дітям.
+                                    </p>
+                                    <p>
+                                        Вивчайте українські страви та їх історію, популяризуйте наші традиції. Кожен
+                                        українець за кордоном — амбасадор та обличчя своєї країни.
+                                    </p>
+                                    <p>
+                                        Не можемо не погодитись з Настею. Адже українська кухня — невід'ємна частина
+                                        нашої культури. І особливо зараз вона має свого роду терапевтичну і навіть якусь
+                                        чарівну дію: підримає, заспокоїть, нагадає про такий рідний смак дому, допоможе
+                                        налагодити стосунки з людьми, які зустрічаються нашим українським сім'ям.
+                                        Готуйте українське, де б не були. Знаходьте, вивчайте, пам'ятайте й передавайте
+                                        смак рідного дому.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="page-news__other-news news-main">
+                    <div class="news-main__container container">
+                        <div class="news-main__body">
+                            <h2 class="news-main__title title-h2">Новини</h2>
+                            <div class="news-main__row">
+                                <div class="news-main__column">
+                                    <div class="news-main__item news-item">
+                                        <div class="news-item__date">10 / 24 / 2023</div>
+                                        <div class="news-item__body">
+                                            <a href="" class="news-item__image-block">
+                                                <span class="news-item__image ibg">
+                                                    <img src="img/news/03.jpg" alt="news">
+                                                </span>
+                                            </a>
+                                            <a href="" class="news-item__title">
+                                                ІДЕАЛЬНА КУХНЯ. ЧОМУ НЕ ВАРТО ЗАОЩАДЖУВАТИ ЧАС ДЛЯ ПЛАНУВАННЯ
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-main__column">
+                                    <div class="news-main__item news-item">
+                                        <div class="news-item__date">09 / 28 / 2023</div>
+                                        <div class="news-item__body">
+                                            <a href="" class="news-item__image-block">
+                                                <span class="news-item__image ibg">
+                                                    <img src="img/news/02.jpg" alt="news">
+                                                </span>
+                                            </a>
+                                            <a href="" class="news-item__title">
+                                                Смак дому: Лєра Квасневська. Про Херсон і Португалію, улюблені сирнички
+                                                і
+                                                котлетки.
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-main__btn-block">
+                                <a href="news.html" class="news-main__btn btn-all">
+                                    <span class="btn-all__arrows">
+                                        <span>→</span>
+                                        <span>→</span>
+                                    </span>
+                                    <span class="btn-all__text">усі новини</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__body">
+            <div class="footer__row">
+                <div class="footer__column column-footer footer__column_1">
+                    <div class="column-footer__inner">
+                        <a href="index.html" class="footer__logo">
+                            <img src="img/logo.svg" alt="logo">
+                        </a>
+                        <div class="footer__socials socials-footer">
+                            <ul class="socials-footer__list">
+                                <li class="socials-footer__item socials-footer__item_facebook">
+                                    <a href="" class="socials-footer__link">
+                                        <img src="img/icons/socials/facebook.svg" alt="facebook">
+                                    </a>
+                                </li>
+                                <li class="socials-footer__item socials-footer__item_youtube">
+                                    <a href="" class="socials-footer__link">
+                                        <img src="img/icons/socials/youtube.svg" alt="youtube">
+                                    </a>
+                                </li>
+                                <li class="socials-footer__item socials-footer__item_instagram">
+                                    <a href="" class="socials-footer__link">
+                                        <img src="img/icons/socials/instagram.svg" alt="instagram">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__copyright" data-da="footer__bottom, 0, 992">
+                            Copyright © 2023 Pyramida.<br> Усі права захищені
+                        </div>
+                        <div class="footer__pay-system pay-system-footer" data-da="footer__bottom, 1, 992">
+                            <ul class="pay-system-footer__list">
+                                <li class="pay-system-footer__item pay-system-footer__item_mastercard">
+                                    <img src="img/pay-system/mastercard.svg" alt="mastercard">
+                                </li>
+                                <li class="pay-system-footer__item pay-system-footer__item_visa">
+                                    <img src="img/pay-system/visa.svg" alt="visa">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__column footer__column_2">
+                    <div class="column-footer__inner">
+                        <nav class="footer__menu menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Про бренд</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Новини</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Сервіс</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Де купити</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Партнерство</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link menu-footer__link_double-text">
+                                        <span>Доставка та оплата</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__column footer__column_3">
+                    <div class="column-footer__inner">
+                        <nav class="footer__menu menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Витяжки</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Варильні поверхні</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Духові шафи</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Посудомийні машини</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Мікрохвильові печі</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Аксесуари</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__column footer__column_4">
+                    <div class="column-footer__inner">
+                        <a href="tel:0800604463" class="footer__phone">0 800 604 463</a>
+                        <div class="footer__info-text">Гаряча лінія з питань сервісу</div>
+                        <div class="footer__text">Дзвоніть пн-пт з 10:00 до 17:00</div>
+                        <div class="footer__small-text">
+                            Дзвінки зі стаціонарних та мобільних<br> телефонів в межах України безкоштовні
+                        </div>
+                        <div class="footer__btns">
+                            <a href="/?Event=DownloadFile&amp;file=catalog"
+                                class="footer__btn footer__btn_download btn">
+                                <span>завантажити каталог</span>
+                            </a>
+                            <a href="" class="footer__btn footer__btn_write open-modal-feedback btn">
+                                <span>написати нам</span>
+                            </a>
+                        </div>
+                        <div class="scroll-top"></div>
+                        <div class="footer__bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

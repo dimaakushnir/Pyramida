@@ -1,0 +1,2077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" /> -->
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <title></title>
+</head>
+
+<body>
+    <!-- При пустому кошику потрібен клас empty -->
+    <div class="modal modal-basket">
+        <div class="modal__inner modal-basket__inner">
+            <a href="" class="modal__close modal-basket__close close"></a>
+            <div class="modal__body modal-basket__body">
+                <div class="modal-basket__top top-modal-basket">
+                    <div class="top-modal-basket__title-block">
+                        <span></span>
+                        <div class="top-modal-basket__title">Товари в кошику</div>
+                        <span></span>
+                    </div>
+                    <div class="top-modal-basket__message">У вашій корзині ще немає товарів</div>
+                </div>
+                <div class="modal-basket__main cart-products">
+                    <div class="cart-products__header">
+                        <div class="cart-products__header-item cart-products__header-item--product">Товар</div>
+                        <div class="cart-products__header-item cart-products__header-item--quantity">
+                            Кількість
+                        </div>
+                        <div class="cart-products__header-item cart-products__header-item--price">Ціна</div>
+                    </div>
+                    <div class="cart-products__body">
+                        <div class="cart-products__item">
+                            <div class="cart-product">
+                                <div class="cart-product__details">
+                                    <div class="cart-product__image-wrap">
+                                        <img class="cart-product__image" src="img/cooker-hoods/cooker-hoods-1/1.jpg"
+                                            alt="KH 60 RUSTICO IV">
+                                    </div>
+                                    <div class="cart-product__info-wrap">
+                                        KH 60 RUSTICO IV </div>
+                                </div>
+                                <div class="cart-product__price price-primary">
+                                    <div class="cart-product__cost">Ціна</div>
+                                    <div class="cart-product__cost-price">6129.00 грн</div>
+                                </div>
+                                <div class="cart-product__costs">
+                                    <div class="cart-product__quantity-title">Кількість</div>
+                                    <div class="cart-product__quantity">
+                                        <div class="cart-product__button-wrapper adaptive-left">
+                                            <button class="button-primary  minus"></button>
+                                        </div>
+                                        <input type="text" value="1">
+                                        <div class="cart-product__button-wrapper adaptive-right">
+                                            <button class="button-primary plus"></button>
+                                            <button style="display: none;" class="button-primary minus"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-product__controls-wrapper">
+                                    <div class="cart-product__price price-total">
+                                        <div class="cart-product__cost">Сума</div>
+                                        <div class="cart-product__cost-sum">6129.00 грн</div>
+                                    </div>
+                                    <div class="cart-product__controls">
+                                        <button class="remove">Видалити</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-product">
+                                <div class="cart-product__details">
+                                    <div class="cart-product__image-wrap">
+                                        <img class="cart-product__image" src="img/cooker-hoods/cooker-hoods-2/1.jpg"
+                                            alt="NR 60 M WH">
+                                    </div>
+                                    <div class="cart-product__info-wrap">
+                                        NR 60 M WH </div>
+                                </div>
+                                <div class="cart-product__price price-primary">
+                                    <div class="cart-product__cost">Ціна</div>
+                                    <div class="cart-product__cost-price">7709.00 грн</div>
+                                </div>
+                                <div class="cart-product__costs">
+                                    <div class="cart-product__quantity-title">Кількість</div>
+                                    <div class="cart-product__quantity">
+                                        <div class="cart-product__button-wrapper adaptive-left">
+                                            <button class="button-primary basket1 minus"></button>
+                                        </div>
+                                        <input type="text" value="1">
+                                        <div class="cart-product__button-wrapper adaptive-right">
+                                            <button class="button-primary plus"></button>
+                                            <button style="display:none" class="button-primary minus"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-product__controls-wrapper">
+                                    <div class="cart-product__price price-total">
+                                        <div class="cart-product__cost">Сума</div>
+                                        <div class="cart-product__cost-sum">7709.00 грн</div>
+                                    </div>
+                                    <div class="cart-product__controls">
+                                        <button class="remove">Видалити</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-basket__bottom bottom-modal-basket">
+                    <div class="bottom-modal-basket__row">
+                        <a href="" class="bottom-modal-basket__btn bottom-modal-basket__btn_continue btn close">
+                            <span>←</span><span>Продовжити покупки</span>
+                        </a>
+                        <div class="bottom-modal-basket__total total-bottom-modal-basket total">
+                            <span class="total-bottom-modal-basket__text total__text">На суму:</span>
+                            <span class="total-bottom-modal-basket__sum total__sum">0</span>
+                            <span class="total-bottom-modal-basket__currency total__currency">грн</span>
+                        </div>
+                        <a href="" class="bottom-modal-basket__btn bottom-modal-basket__btn_payment btn">
+                            <span>Оформити замовлення</span><span>→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-search">
+        <div class="modal__inner modal-search__inner">
+            <a href="" class="modal__close modal-search__close close"></a>
+            <div class="modal__body modal-search__body">
+                <div class="modal-search__top top-modal-search">
+                    <div class="top-modal-search__title">
+                        <span>Доброго дня, що ви шукаєте?</span>
+                    </div>
+                </div>
+                <div class="modal-search__main">
+                    <form action="#" class="modal-search__form form-modal-search">
+                        <div class="form-modal-search__item">
+                            <input placeholder="Введіть текст тут" autocomplete='off' type='text' name='form[]'
+                                class='form-modal-search__input'>
+                        </div>
+                        <button type='submit' class='form-modal-search__btn btn btn_violet'>
+                            <span>Пошук</span>
+                            <span>→</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-feedback">
+        <div class="modal__inner modal-feedback__inner">
+            <a href="" class="modal__close modal-feedback__close close"></a>
+            <div class="modal__body modal-feedback__body">
+                <div class="modal-feedback__top top-modal-feedback">
+                    <div class="top-modal-feedback__title-block">
+                        <span></span>
+                        <div class="top-modal-feedback__title">Форма зв'язку</div>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="modal-feedback__main">
+                    <form action="#" class="modal-feedback__form form-modal-feedback">
+                        <div class="form-modal-feedback__text">
+                            Місця, відмічені*, обов'язкові для заповнення
+                        </div>
+                        <div class="form-modal-feedback__item">
+                            <label for="formFeedbackName" class="form-modal-feedback__label">Ім'я*</label>
+                            <input required id="formFeedbackName" autocomplete='off' type='text' name='form[]'
+                                class='form-modal-feedback__input'>
+                        </div>
+                        <div class="form-modal-feedback__item">
+                            <label for="formFeedbackPhone" class="form-modal-feedback__label">
+                                Контактний телефон*
+                            </label>
+                            <input required id="formFeedbackPhone" placeholder="+38 (xxx) xxx-xx-xx" autocomplete='off'
+                                type='tel' name='form[]' class='form-modal-feedback__input tel'>
+                        </div>
+                        <div class="form-modal-feedback__item">
+                            <label for="formFeedbackEmail" class="form-modal-feedback__label">E-mail*</label>
+                            <input required id="formFeedbackEmail" autocomplete='off' type='email' name='form[]'
+                                class='form-modal-feedback__input'>
+                        </div>
+                        <div class="form-modal-feedback__item">
+                            <label for="formFeedbackMessage" class="form-modal-feedback__label">Повідомлення</label>
+                            <textarea name="form[]" id="formFeedbackMessage"
+                                class="form-modal-feedback__textatea"></textarea>
+                        </div>
+                        <div class="form-modal-feedback__item">
+                            <div class="form-modal-feedback__small-text">
+                                Підтвердіть, що Ви не робот.
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                        </div>
+                        <div class="form-modal-feedback__item">
+                            <div class="form-modal-feedback__small-text">
+                                <p>Додайте до повідомлення фото <span>чека покупки</span> техніки та фото
+                                    <span>гарантійного талону</span>.
+                                </p>
+                                <p>Ви можете додати максимум 5 файлів.</p>
+                                <p>Рекомендований розмір - менше 10 МБ.</p>
+                            </div>
+                            <div class="form-modal-feedback__bottom">
+
+                                <div class="form-modal-feedback__file file">
+                                    <div class="file__message">Ви вже добавили 5 файлів.</div>
+                                    <div class="file__body">
+                                        <input type='file' name='form[]' class='file__input'>
+                                        <div class="file__button btn btn_grey">
+                                            <span>Вкласти додаток</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type='submit' class='form-modal-feedback__btn btn btn_violet'>
+                                    <span>Надіслати</span>
+                                    <span>→</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-modal-feedback__previews file-previews"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-notification">
+        <div class="modal__inner modal-notification__inner">
+            <a href="" class="modal__close modal-notification__close close"></a>
+            <div class="modal__body modal-notification__body">
+                <div class="modal-notification__content">
+                    <div class="modal-notification__top">
+                        <div class="modal-notification__image-block">
+                            <img class="modal-notification__image" src="" alt="">
+                        </div>
+                        <div class="modal-notification__info info-modal-notification">
+                            <div class="info-modal-notification__category">Витяжка</div>
+                            <div class="info-modal-notification__row">
+                                <div class="info-modal-notification__brand">Pyramida</div>
+                                <div class="info-modal-notification__model"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-notification__main">
+                        <form action="#" class="modal-notification__form form-modal-notification">
+                            <div class="form-modal-notification__text">
+                                Місця, відмічені*, обов'язкові для заповнення
+                            </div>
+                            <div class="form-modal-notification__item">
+                                <label for="formFeedbackName" class="form-modal-notification__label">Ім'я*</label>
+                                <input required id="formFeedbackName" autocomplete='off' type='text' name='form[]'
+                                    class='form-modal-notification__input'>
+                            </div>
+                            <div class="form-modal-notification__item">
+                                <label for="formFeedbackPhone" class="form-modal-notification__label">
+                                    Контактний телефон*
+                                </label>
+                                <input required id="formFeedbackPhone" placeholder="+38 (xxx) xxx-xx-xx"
+                                    autocomplete='off' type='tel' name='form[]'
+                                    class='form-modal-notification__input tel'>
+                            </div>
+                            <div class="form-modal-notification__item">
+                                <label for="formFeedbackEmail" class="form-modal-notification__label">E-mail*</label>
+                                <input required id="formFeedbackEmail" autocomplete='off' type='email' name='form[]'
+                                    class='form-modal-notification__input'>
+                            </div>
+                            <div class="form-modal-notification__text form-modal-notification__text_max-width">
+                                Ми надішлемо вам листа, як тільки товар знову буде в наявності
+                            </div>
+                            <button type='submit' class='form-modal-notification__btn btn btn_violet'>
+                                <span>Буду чекати</span>
+                                <span>→</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-notification__thank thank-modal-notification">
+                    <div class="thank-modal-notification__text">
+                        Коли товар з'явиться в наявності, ми відправимо повідомлення на вказану вами електронну
+                        адресу. А поки, можливо ви знайдете альтернативу в нашому каталозі. Необхідна допомога з
+                        вибором? Телефонуйте 0 800 60 222 0. Гарного дня ;)
+                    </div>
+                    <a href="" class="thank-modal-notification__btn btn_violet">
+                        <span>←</span>
+                        <span>Продовжити покупки</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__additionally additionally-header">
+                <div class="additionally-header__container container">
+                    <div class="additionally-header__body">
+                        <a href="" class="additionally-header__basket basket-icon open-modal-basket">
+                            <!-- При пустому кошику потрібен клас empty -->
+                            <span class="basket-icon__count">2</span>
+                            <span>Кошик</span>
+                        </a>
+                        <div class="additionally-header__call-back-block call-back-block">
+                            <a href="" class="call-back-block__close">
+                                <img src="img/icons/tel_close.png" alt="tel_close">
+                            </a>
+                            <div class="call-back-block__info info-call-back-block">
+                                <div class="info-call-back-block__schedule">Будні дні з 10:00 до 17:00</div>
+                                <div class="info-call-back-block__tel">
+                                    <a href="tel:0800604463">0 800 604 463</a>
+                                </div>
+                                <div class="info-call-back-block__text">Гаряча лінія з питань сервісу</div>
+                            </div>
+                            <form action="" class="call-back-block__form form-call-back-block">
+                                <div class="form-call-back-block__text">
+                                    Ви також можете замовити дзвінок і ми Вам зателефонуємо
+                                </div>
+                                <div class="form-call-back-block__item">
+                                    <label for="CallBackTopic" class="form-call-back-block__label">Тема
+                                        повідомлення</label>
+                                    <div class="form-call-back-block__dropdown dropdown">
+                                        <button class='dropdown__button button-dropdown'>
+                                            <span class="button-dropdown__text">Купівля</span>
+                                            <div class="button-dropdown__trigger trigger-button-dropdown">
+                                                <div class="trigger-button-dropdown__arrow"></div>
+                                            </div>
+                                        </button>
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__list-item selected" data-dropdown="Купівля">Купівля
+                                            </li>
+                                            <li class="dropdown__list-item" data-dropdown="Сервіс">Сервіс</li>
+                                        </ul>
+                                        <input id="CallBackTopic" type='text' name='form[]' value='Купівля'
+                                            class='dropdown__input-hidden'>
+                                    </div>
+                                </div>
+                                <div class="form-call-back-block__item">
+                                    <label for="CallBackName" class="form-call-back-block__label">Ім'я</label>
+                                    <input id="CallBackName" autocomplete='off' type='text' name='form[]'
+                                        class='form-call-back-block__input'>
+                                </div>
+                                <div class="form-call-back-block__item">
+                                    <label for="CallBackTel" class="form-call-back-block__label">Контактний
+                                        телефон</label>
+                                    <input id="CallBackTel" placeholder="+38 (xxx) xxx-xx-xx" autocomplete='off'
+                                        type='tel' name='form[]' class='form-call-back-block__input tel'>
+                                </div>
+                                <hr>
+                                <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                                <div class="form-call-back-block__block">
+                                    <button type='submit' class='form-call-back-block__btn btn btn_violet'>Замовити
+                                        дзвінок</button>
+                                </div>
+                            </form>
+                            <div class="call-back-block__message">
+                                <span>
+                                    Ми зателефонуємо Вам найближчикм часом та обов’язково допоможемо з вибором найкращої
+                                    техніки
+                                </span>
+                                <br><br>
+                                <img src="../img/icons/tel_smile.png" alt="tel_smile">
+                            </div>
+                        </div>
+                        <div class="additionally-header__call-back-button">
+                            <span>Замовити дзвінок</span>
+                        </div>
+                        <div class="additionally-header__schedule">Будні дні з 10:00 до 17:00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__top top-header">
+                <div class="top-header__container container">
+                    <div class="top-header__body">
+                        <div class="top-header__row">
+                            <nav class="top-header__menu menu-top-header" data-da="mobile-header__last-menu, 0, 767.98">
+                                <ul class="menu-top-header__list">
+                                    <li class="menu-top-header__item">
+                                        <a href="" class="menu-top-header__link">Про бренд</a>
+                                    </li>
+                                    <li class="menu-top-header__item">
+                                        <a href="news.html" class="menu-top-header__link">Новини</a>
+                                    </li>
+                                    <li class="menu-top-header__item">
+                                        <a href="" class="menu-top-header__link">Сервіс</a>
+                                    </li>
+                                    <li class="menu-top-header__item">
+                                        <a href="" class="menu-top-header__link">Де купити</a>
+                                    </li>
+                                    <li class="menu-top-header__item">
+                                        <a href="" class="menu-top-header__link">Партнерство</a>
+                                    </li>
+                                    <li class="menu-top-header__item">
+                                        <a href="" class="menu-top-header__link">Доставка та оплата</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="top-header__navigation-icons navigation-icons-top-header"
+                                data-da="tollbar-header__inner, 0, 991.98">
+                                <ul class="navigation-icons-top-header__items">
+                                    <li class="navigation-icons-top-header__item">
+                                        <a href=""
+                                            class="navigation-icons-top-header__link navigation-icons-top-header__link_search open-modal-search">Пошук</a>
+                                    </li>
+                                    <li class="navigation-icons-top-header__item">
+                                        <a href=""
+                                            class="navigation-icons-top-header__link navigation-icons-top-header__link_basket basket-icon open-modal-basket">
+                                            <!-- При пустому кошику потрібен клас empty -->
+                                            <span class="basket-icon__count">2</span>
+                                            <span>Кошик</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__toolbar tollbar-header">
+                <div class="tollbar-header__container container">
+                    <div class="tollbar-header__body">
+                        <div class="tollbar-header__row">
+                            <div class="tollbar-header__logo-block">
+                                <a href="index.html" class="tollbar-header__logo">
+                                    <img src="img/logo.svg" alt="logo">
+                                </a>
+                            </div>
+                            <div class="tollbar-header__inner">
+                                <nav class="tollbar-header__menu menu-tollbar-header"
+                                    data-da="mobile-header__first-menu, 0, 991.98">
+                                    <ul class="menu-tollbar-header__list">
+                                        <li class="menu-tollbar-header__item has-submenu">
+                                            <a href="" class="menu-tollbar-header__link active">Витяжки</a>
+                                            <div class="menu-tollbar-header__sub-menu sub-menu">
+                                                <div class="sub-menu__top top-sub-menu">
+                                                    <button class="top-sub-menu__back">
+                                                        <img src="img/icons/arrow_back.png" alt="arrow_back">
+                                                    </button>
+                                                    <div class="top-sub-menu__title">Витяжки</div>
+                                                    <div class="mobile-header__close"></div>
+                                                </div>
+                                                <div class="sub-menu__baner">
+                                                    <img src="img/cooker-hoods/baner.jpg" alt="cooker-hoods">
+                                                </div>
+                                                <div class="sub-menu__body">
+                                                    <div class="sub-menu__row">
+                                                        <div class="sub-menu__column sub-menu__column_links">
+                                                            <div class="sub-menu__title">
+                                                                <span>Тип</span>
+                                                            </div>
+                                                            <nav class="sub-menu__menu">
+                                                                <ul class="sub-menu__list">
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Усі моделі</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Вертикальні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Похилі</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Декоративні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Купольні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Вбудовувані</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Плоскі</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                        <div class="sub-menu__column sub-menu__column_images">
+                                                            <div class="sub-menu__images images-sub-menu">
+                                                                <div class="images-sub-menu__row">
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/cooker-hoods/1.png"
+                                                                                    alt="cooker-hood">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/cooker-hoods/2.png"
+                                                                                    alt="cooker-hood">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/cooker-hoods/3.png"
+                                                                                    alt="cooker-hood">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-tollbar-header__item has-submenu">
+                                            <a href="" class="menu-tollbar-header__link">Варильні поверхні</a>
+                                            <div class="menu-tollbar-header__sub-menu sub-menu">
+                                                <div class="sub-menu__top top-sub-menu">
+                                                    <button class="top-sub-menu__back">
+                                                        <img src="img/icons/arrow_back.png" alt="arrow_back">
+                                                    </button>
+                                                    <div class="top-sub-menu__title">Варильні поверхні</div>
+                                                    <div class="mobile-header__close"></div>
+                                                </div>
+                                                <div class="sub-menu__baner">
+                                                    <img src="img/cooking-surfaces/baner.jpg" alt="cooking-surfaces">
+                                                </div>
+                                                <div class="sub-menu__body">
+                                                    <div class="sub-menu__row">
+                                                        <div class="sub-menu__column sub-menu__column_links">
+                                                            <div class="sub-menu__title">
+                                                                <span>Тип</span>
+                                                            </div>
+                                                            <nav class="sub-menu__menu">
+                                                                <ul class="sub-menu__list">
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Усі моделі</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Індукційні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Електричні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Газові</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Комбіновані</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                        <div class="sub-menu__column sub-menu__column_images">
+                                                            <div class="sub-menu__images images-sub-menu">
+                                                                <div class="images-sub-menu__row">
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/cooking-surfaces/1.jpg"
+                                                                                    alt="cooking-surfaces">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/cooking-surfaces/2.jpg"
+                                                                                    alt="cooking-surfaces">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/cooking-surfaces/3.jpg"
+                                                                                    alt="cooking-surfaces">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-tollbar-header__item has-submenu">
+                                            <a href="" class="menu-tollbar-header__link">Духові шафи</a>
+                                            <div class="menu-tollbar-header__sub-menu sub-menu">
+                                                <div class="sub-menu__top top-sub-menu">
+                                                    <button class="top-sub-menu__back">
+                                                        <img src="img/icons/arrow_back.png" alt="arrow_back">
+                                                    </button>
+                                                    <div class="top-sub-menu__title">Духові шафи</div>
+                                                    <div class="mobile-header__close"></div>
+                                                </div>
+                                                <div class="sub-menu__baner">
+                                                    <img src="img/ovens/baner.jpg" alt="ovens">
+                                                </div>
+                                                <div class="sub-menu__body">
+                                                    <div class="sub-menu__row">
+                                                        <div class="sub-menu__column sub-menu__column_links">
+                                                            <div class="sub-menu__title">
+                                                                <span>Тип</span>
+                                                            </div>
+                                                            <nav class="sub-menu__menu">
+                                                                <ul class="sub-menu__list">
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Усі моделі</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>4-режимні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>5-режимні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>6-режимні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>7-режимні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>8-режимні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>9-режимні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>10-режимні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>18-режимні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                        <div class="sub-menu__column sub-menu__column_images">
+                                                            <div class="sub-menu__images images-sub-menu">
+                                                                <div class="images-sub-menu__row">
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/ovens/1.jpg" alt="ovens">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/ovens/2.jpg" alt="ovens">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/ovens/3.jpg" alt="ovens">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-tollbar-header__item">
+                                            <a href="" class="menu-tollbar-header__link">Посудомийні машини</a>
+                                        </li>
+                                        <li class="menu-tollbar-header__item">
+                                            <a href="" class="menu-tollbar-header__link">Мікрохвильові печі</a>
+                                        </li>
+                                        <li class="menu-tollbar-header__item has-submenu">
+                                            <a href="" class="menu-tollbar-header__link">Аксесуари</a>
+                                            <div class="menu-tollbar-header__sub-menu sub-menu">
+                                                <div class="sub-menu__top top-sub-menu">
+                                                    <button class="top-sub-menu__back">
+                                                        <img src="img/icons/arrow_back.png" alt="arrow_back">
+                                                    </button>
+                                                    <div class="top-sub-menu__title">Аксесуари</div>
+                                                    <div class="mobile-header__close"></div>
+                                                </div>
+                                                <div class="sub-menu__baner">
+                                                    <img src="img/accessories/baner.jpg" alt="accessories">
+                                                </div>
+                                                <div class="sub-menu__body">
+                                                    <div class="sub-menu__row">
+                                                        <div class="sub-menu__column sub-menu__column_links">
+                                                            <div class="sub-menu__title">
+                                                                <span>Тип</span>
+                                                            </div>
+                                                            <nav class="sub-menu__menu">
+                                                                <ul class="sub-menu__list">
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Усі моделі</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Для витяжок</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Для поверхонь</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Захисні приладдя</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Пароварка</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                        <div class="sub-menu__column sub-menu__column_images">
+                                                            <div class="sub-menu__images images-sub-menu">
+                                                                <div class="images-sub-menu__row">
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/accessories/1.jpg"
+                                                                                    alt="accessories">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/accessories/2.png"
+                                                                                    alt="accessories">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/accessories/3.png"
+                                                                                    alt="accessories">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="tollbar-header__burger">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="mobile-header">
+            <div class="mobile-header__container container">
+                <div class="mobile-header__body">
+                    <a href="" class="mobile-header__close"></a>
+                    <div class="mobile-header__top">
+                        <div class="mobile-header__lang lang-mobile-header">
+                            <ul class="lang-mobile-header__list">
+                                <li class="lang-mobile-header__item">
+                                    <a href="" class="lang-mobile-header__link">рус</a>
+                                </li>
+                                <li class="lang-mobile-header__item">
+                                    <a href="" class="lang-mobile-header__link active">укр</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mobile-header__first-menu"></div>
+                    <div class="mobile-header__last-menu"></div>
+                    <div class="mobile-header__bottom">
+                        <div class="modal-search__top top-modal-search">
+                            <div class="top-modal-search__title">
+                                <span>Доброго дня, що ви шукаєте?</span>
+                            </div>
+                        </div>
+                        <div class="modal-search__main">
+                            <form action="#" class="modal-search__form form-modal-search">
+                                <div class="form-modal-search__item">
+                                    <input placeholder="Введіть текст тут" autocomplete='off' type='text' name='form[]'
+                                        class='form-modal-search__input'>
+                                </div>
+                                <button type='submit' class='form-modal-search__btn btn btn_violet'>
+                                    <span>Пошук</span>
+                                    <span>→</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__container container">
+                <div class="breadcrumbs__body">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">Головна</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span>Витяжки</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <main role="main">
+            <div class="scroll-top scroll-top-fixed"></div>
+            <div class="catalog">
+                <div class="catalog__top top-catalog">
+                    <div class="top-catalog__container container">
+                        <div class="top-catalog__row">
+                            <div class="top-catalog__filter">
+                                <a href="" class="top-catalog__btn">
+                                    <span>ФІЛЬТРУВАТИ РЕЗУЛЬТАТИ</span>
+                                </a>
+                            </div>
+                            <div class="top-catalog__categories">ВИТЯЖКИ PYRAMIDA</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__content content-catalog">
+                    <div class="content-catalog__container container">
+                        <div class="content-catalog__row">
+                            <div class="content-catalog__filter filter-content-catalog">
+                                <div class="filter-content-catalog__body">
+                                    <form action="#" class="filter-content-catalog__form">
+                                        <div class="filter-content-catalog__accordion accordion">
+                                            <div class="accordion__item">
+                                                <div class="accordion__header header-accordion">
+                                                    <span class="header-accordion__title">Група витяжок</span>
+                                                    <span class="header-accordion__icon"></span>
+                                                </div>
+                                                <div class="accordion__body">
+                                                    <ul class="accordion__list">
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsTypeInclined" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsTypeInclined"
+                                                                    class="checkbox-accordion__label">
+                                                                    Похилі
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsTypeDomed" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsTypeDomed"
+                                                                    class="checkbox-accordion__label">
+                                                                    Купольні
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsTypeBuiltIn" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsTypeBuiltIn"
+                                                                    class="checkbox-accordion__label">
+                                                                    Вбудовувані
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsTypeFlat" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsTypeFlat"
+                                                                    class="checkbox-accordion__label">
+                                                                    Плоскі
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsTypeVertical" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsTypeVertical"
+                                                                    class="checkbox-accordion__label">
+                                                                    Вертикальні
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsTypeDecorative" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsTypeDecorative"
+                                                                    class="checkbox-accordion__label">
+                                                                    Декоративні
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsTypeFullyBuiltIn" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsTypeFullyBuiltIn"
+                                                                    class="checkbox-accordion__label">
+                                                                    Повновбудовувані
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="accordion__item">
+                                                <div class="accordion__header header-accordion">
+                                                    <span class="header-accordion__title">Ширина</span>
+                                                    <span class="header-accordion__icon"></span>
+                                                </div>
+                                                <div class="accordion__body">
+                                                    <ul class="accordion__list">
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsWidth50" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsWidth50"
+                                                                    class="checkbox-accordion__label">
+                                                                    50 см
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsWidth52" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsWidth52"
+                                                                    class="checkbox-accordion__label">
+                                                                    52 см
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsWidth60" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsWidth60"
+                                                                    class="checkbox-accordion__label">
+                                                                    60 см
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsWidth60" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsWidth60"
+                                                                    class="checkbox-accordion__label">
+                                                                    60 см
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsWidth70" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsWidth70"
+                                                                    class="checkbox-accordion__label">
+                                                                    70 см
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsWidth90" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsWidth90"
+                                                                    class="checkbox-accordion__label">
+                                                                    90 см
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsWidthOther" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsWidthOther"
+                                                                    class="checkbox-accordion__label">
+                                                                    Інше
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="accordion__item">
+                                                <div class="accordion__header header-accordion">
+                                                    <span class="header-accordion__title">Колір</span>
+                                                    <span class="header-accordion__icon"></span>
+                                                </div>
+                                                <div class="accordion__body">
+                                                    <ul class="accordion__list">
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsСolorBlack" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsСolorBlack"
+                                                                    class="checkbox-accordion__label">
+                                                                    Чорний
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsСolorWhite" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsСolorWhite"
+                                                                    class="checkbox-accordion__label">
+                                                                    Білий
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsСolorInox" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsСolorInox"
+                                                                    class="checkbox-accordion__label">
+                                                                    Нержавіюча сталь (inox)
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsСolorIvory" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsСolorIvory"
+                                                                    class="checkbox-accordion__label">
+                                                                    Слонової кістки (ivory)
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsСolorSand" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsСolorSand"
+                                                                    class="checkbox-accordion__label">
+                                                                    Пісочний (sand)
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsСolorGray" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsСolorGray"
+                                                                    class="checkbox-accordion__label">
+                                                                    Сірий (gray)
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsСolorBrown" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsСolorBrown"
+                                                                    class="checkbox-accordion__label">
+                                                                    Коричневий (brown)
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsСolorRed" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsСolorRed"
+                                                                    class="checkbox-accordion__label">
+                                                                    Червоний (red)
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="accordion__item">
+                                                <div class="accordion__header header-accordion">
+                                                    <span class="header-accordion__title">Режим роботи</span>
+                                                    <span class="header-accordion__icon"></span>
+                                                </div>
+                                                <div class="accordion__body">
+                                                    <ul class="accordion__list">
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsRegimeRecirculation"
+                                                                    type='checkbox' name='form[]'
+                                                                    class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsRegimeRecirculation"
+                                                                    class="checkbox-accordion__label">
+                                                                    Рециркуляція
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsRegimeWithdrawal" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsRegimeWithdrawal"
+                                                                    class="checkbox-accordion__label">
+                                                                    Відведення
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="accordion__item">
+                                                <div class="accordion__header header-accordion">
+                                                    <span class="header-accordion__title">Управління</span>
+                                                    <span class="header-accordion__icon"></span>
+                                                </div>
+                                                <div class="accordion__body">
+                                                    <ul class="accordion__list">
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsManagementGesture"
+                                                                    type='checkbox' name='form[]'
+                                                                    class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsManagementGesture"
+                                                                    class="checkbox-accordion__label">
+                                                                    Управління жестами
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsManagementSensory"
+                                                                    type='checkbox' name='form[]'
+                                                                    class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsManagementSensory"
+                                                                    class="checkbox-accordion__label">
+                                                                    Сенсорне
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsManagementElectronic"
+                                                                    type='checkbox' name='form[]'
+                                                                    class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsManagementElectronic"
+                                                                    class="checkbox-accordion__label">
+                                                                    Електронне
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsManagementМеханічне"
+                                                                    type='checkbox' name='form[]'
+                                                                    class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsManagementМеханічне"
+                                                                    class="checkbox-accordion__label">
+                                                                    Механічне
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="accordion__item">
+                                                <div class="accordion__header header-accordion">
+                                                    <span class="header-accordion__title">Швидкості</span>
+                                                    <span class="header-accordion__icon"></span>
+                                                </div>
+                                                <div class="accordion__body">
+                                                    <ul class="accordion__list">
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsManagementSpeed5" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsManagementSpeed5"
+                                                                    class="checkbox-accordion__label">
+                                                                    5
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsManagementSpeed2" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsManagementSpeed2"
+                                                                    class="checkbox-accordion__label">
+                                                                    2
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsManagementSpeed3" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsManagementSpeed3"
+                                                                    class="checkbox-accordion__label">
+                                                                    3
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsManagementSpeed4" type='checkbox'
+                                                                    name='form[]' class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsManagementSpeed4"
+                                                                    class="checkbox-accordion__label">
+                                                                    4
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="accordion__item">
+                                                <div class="accordion__header header-accordion">
+                                                    <span class="header-accordion__title">Продуктивність</span>
+                                                    <span class="header-accordion__icon"></span>
+                                                </div>
+                                                <div class="accordion__body">
+                                                    <ul class="accordion__list">
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsProductivityUpTo500"
+                                                                    type='checkbox' name='form[]'
+                                                                    class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsProductivityUpTo500"
+                                                                    class="checkbox-accordion__label">
+                                                                    до 500 м3/год
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsProductivity500-1000"
+                                                                    type='checkbox' name='form[]'
+                                                                    class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsProductivity500-1000"
+                                                                    class="checkbox-accordion__label">
+                                                                    500-1000 м3/год
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="accordion__list-item">
+                                                            <div class="accordion__checkbox checkbox-accordion">
+                                                                <input id="kitchenHoodsProductivityAbove1000"
+                                                                    type='checkbox' name='form[]'
+                                                                    class='checkbox-accordion__input'>
+                                                                <label for="kitchenHoodsProductivityAbove1000"
+                                                                    class="checkbox-accordion__label">
+                                                                    вище 1000 м3/год
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="accordion__stock">
+                                                <div class="accordion__checkbox checkbox-accordion">
+                                                    <input id="kitchenHoodsStock" type='checkbox' name='form[]'
+                                                        class='checkbox-accordion__input'>
+                                                    <label for="kitchenHoodsStock" class="checkbox-accordion__label">
+                                                        в наявності
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="accordion__price price-accordion">
+                                                <div class="price-accordion__inputs inputs-price-accordion">
+                                                    <div class="inputs-price-accordion__row">
+                                                        <div class="inputs-price-accordion__item">
+                                                            <input type="number" value="0" class="" id="amount-min">
+                                                        </div>
+                                                        <div class="inputs-price-accordion__item">
+                                                            <input type="number" value="22000" id="amount-max">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="price-accordion__slider">
+                                                    <div id="slider-range"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type='submit'
+                                            class='filter-content-catalog__btn btn btn_violet'>Фільтрувати</button>
+                                        <button type='reset'
+                                            class='filter-content-catalog__btn-delete-all delete-all'><span>Скинути</span></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="content-catalog__body">
+                                <div class="content-catalog__filter-selected filter-selected">
+                                    <div class="filter-selected__title">Використані фільтри</div>
+                                    <div class="filter-selected__body">
+                                        <ul class="filter-selected__list">
+                                            <a href="" class="filter-selected__delete-all delete-all">
+                                                <span>Скинути фільтри</span>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content-catalog__compare compare-content-catalog">
+                                    <div class="compare-content-catalog__title">Додані до порівняння</div>
+                                    <div class="compare-content-catalog__body">
+                                        <div class="compare-content-catalog__list">
+                                        </div>
+                                        <div class="compare-content-catalog__btns">
+                                            <a href=""
+                                                class="compare-content-catalog__btn-compare btn_yellow">Порівняти</a>
+                                            <a href="" class="compare-content-catalog__btn-delete-all">
+                                                <span>Скинути все</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-catalog__goods catalog-goods">
+                                    <div class="catalog-goods__row">
+                                        <div class="catalog-goods__column">
+                                            <div class="catalog-goods__item">
+                                                <div class="catalog-goods__image-block">
+                                                    <a href="" class="catalog-goods__images">
+                                                        <img src="img/cooker-hoods/cooker-hoods-3/01.jpg"
+                                                            alt="cooker-hood" class="catalog-goods__img">
+                                                        <img src="img/cooker-hoods/cooker-hoods-3/02.jpg"
+                                                            alt="cooker-hood" class="catalog-goods__img-hover">
+                                                    </a>
+                                                </div>
+                                                <div class="catalog-goods__body">
+                                                    <a href="" class="catalog-goods__name">TL G IX BL</a>
+                                                    <ul
+                                                        class="catalog-goods__characteristics characteristics-catalog-goods">
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Телескопічна витяжка</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Продуктивність: 700 м3/год</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>LED освітлення: 2 х 5 Вт</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Ширина: 50 см, 60 см</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Передня планка декорована склом</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Механічне управління</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Відведення</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>5-шарові жирові фільтри</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="catalog-goods__bottom">
+                                                    <div class="catalog-goods__price price-catalog-goods">
+                                                        <div class="price-catalog-goods__old-price show">
+                                                            22 999 <span>грн</span>
+                                                        </div>
+                                                        <div class="price-catalog-goods__row">
+                                                            <div class="price-catalog-goods__current-price">
+                                                                20 999 <span>грн</span></span>
+                                                            </div>
+                                                            <div
+                                                                class="price-catalog-goods__status status-catalog-goods">
+                                                                <span class="status-catalog-goods__available">
+                                                                    в наявності
+                                                                </span>
+                                                                <span class="status-catalog-goods__not-available">
+                                                                    немає в наявності
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="catalog-goods__btns">
+                                                        <a href=""
+                                                            class="catalog-goods__btn catalog-goods__btn_buy active">
+                                                            <span>Купити</span>
+                                                            <span></span>
+                                                        </a>
+                                                        <a href=""
+                                                            class="catalog-goods__btn catalog-goods__btn_in-basket">
+                                                            <span>У корзині</span>
+                                                            <span></span>
+                                                        </a>
+                                                        <a href=""
+                                                            class="catalog-goods__btn catalog-goods__btn_not-available">
+                                                            <span>Повідомити про наявність</span>
+                                                            <span></span>
+                                                        </a>
+                                                        <a href=""
+                                                            class="catalog-goods__btn catalog-goods__btn_detail active">
+                                                            <span>Детальніше</span>
+                                                            <span>→</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="catalog-goods__compare compare-catalog-goods">
+                                                        <div class="compare-catalog-goods__checkbox">
+                                                            <input id="kitchenHoodsTL-G-IX-BL" type='checkbox'
+                                                                name='form[]' class='compare-catalog-goods__input'>
+                                                            <label for="kitchenHoodsTL-G-IX-BL"
+                                                                class="compare-catalog-goods__label">
+                                                                порівняти
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-goods__column">
+                                            <div class="catalog-goods__item">
+                                                <div class="catalog-goods__image-block">
+                                                    <a href="" class="catalog-goods__images">
+                                                        <img src="img/cooker-hoods/cooker-hoods-4/01.jpg"
+                                                            alt="cooker-hood" class="catalog-goods__img">
+                                                        <img src="img/cooker-hoods/cooker-hoods-4/02.jpg"
+                                                            alt="cooker-hood" class="catalog-goods__img-hover">
+                                                    </a>
+                                                </div>
+                                                <div class="catalog-goods__body">
+                                                    <a href="" class="catalog-goods__name">KH IX</a>
+                                                    <ul
+                                                        class="catalog-goods__characteristics characteristics-catalog-goods">
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Купольна витяжка</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Продуктивність: 600 м3/год, 700 м3/год</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Ширина: 50 см, 60 см</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>3 швидкості</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>LED освітлення: 2 х 5 Вт</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Механічне управління</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Рециркуляція/відведення</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>5-шарові жирові фільтри</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="catalog-goods__bottom">
+                                                    <div class="catalog-goods__price price-catalog-goods">
+                                                        <div class="price-catalog-goods__old-price">
+                                                        </div>
+                                                        <div class="price-catalog-goods__row">
+                                                            <div class="price-catalog-goods__current-price">
+                                                                5929 <span>грн</span>
+                                                            </div>
+                                                            <div
+                                                                class="price-catalog-goods__status status-catalog-goods">
+                                                                <span class="status-catalog-goods__available">
+                                                                    в наявності
+                                                                </span>
+                                                                <span class="status-catalog-goods__not-available">
+                                                                    немає в наявності
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="catalog-goods__btns">
+                                                        <a href="" class="catalog-goods__btn catalog-goods__btn_buy">
+                                                            <span>Купити</span>
+                                                            <span></span>
+                                                        </a>
+                                                        <a href=""
+                                                            class="catalog-goods__btn catalog-goods__btn_in-basket">
+                                                            <span>У корзині</span>
+                                                            <span></span>
+                                                        </a>
+                                                        <a href=""
+                                                            class="catalog-goods__btn catalog-goods__btn_not-available active">
+                                                            <span>Повідомити про наявність</span>
+                                                            <span></span>
+                                                        </a>
+                                                        <a href=""
+                                                            class="catalog-goods__btn catalog-goods__btn_detail active">
+                                                            <span>Детальніше</span>
+                                                            <span>→</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="catalog-goods__compare compare-catalog-goods">
+                                                        <div class="compare-catalog-goods__checkbox">
+                                                            <input id="kitchenHoodsKH-IX" type='checkbox' name='form[]'
+                                                                class='compare-catalog-goods__input'>
+                                                            <label for="kitchenHoodsKH-IX"
+                                                                class="compare-catalog-goods__label">
+                                                                порівняти
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-goods__column">
+                                            <div class="catalog-goods__item">
+                                                <div class="catalog-goods__image-block">
+                                                    <a href="" class="catalog-goods__images">
+                                                        <img src="img/cooker-hoods/cooker-hoods-3/01.jpg"
+                                                            alt="cooker-hood" class="catalog-goods__img">
+                                                        <img src="img/cooker-hoods/cooker-hoods-3/02.jpg"
+                                                            alt="cooker-hood" class="catalog-goods__img-hover">
+                                                    </a>
+                                                </div>
+                                                <div class="catalog-goods__body">
+                                                    <a href="" class="catalog-goods__name">TL G IX BL</a>
+                                                    <ul
+                                                        class="catalog-goods__characteristics characteristics-catalog-goods">
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Телескопічна витяжка</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Продуктивність: 700 м3/год</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>LED освітлення: 2 х 5 Вт</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Ширина: 50 см, 60 см</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Передня планка декорована склом</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Механічне управління</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Відведення</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>5-шарові жирові фільтри</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="catalog-goods__bottom">
+                                                    <div class="catalog-goods__price price-catalog-goods">
+                                                        <div class="price-catalog-goods__old-price">
+                                                            22 999 <span>грн</span>
+                                                        </div>
+                                                        <div class="price-catalog-goods__row">
+                                                            <div class="price-catalog-goods__current-price">
+                                                                20 999 <span>грн</span></span>
+                                                            </div>
+                                                            <div
+                                                                class="price-catalog-goods__status status-catalog-goods">
+                                                                <span class="status-catalog-goods__available">
+                                                                    в наявності
+                                                                </span>
+                                                                <span class="status-catalog-goods__not-available">
+                                                                    немає в наявності
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="catalog-goods__btns">
+                                                        <a href="" class="catalog-goods__btn catalog-goods__btn_buy">
+                                                            <span>Купити</span>
+                                                            <span></span>
+                                                        </a>
+                                                        <a href=""
+                                                            class="catalog-goods__btn catalog-goods__btn_in-basket active">
+                                                            <span>У корзині</span>
+                                                            <span></span>
+                                                        </a>
+                                                        <a href=""
+                                                            class="catalog-goods__btn catalog-goods__btn_not-available">
+                                                            <span>Повідомити про наявність</span>
+                                                            <span></span>
+                                                        </a>
+                                                        <a href=""
+                                                            class="catalog-goods__btn catalog-goods__btn_detail active">
+                                                            <span>Детальніше</span>
+                                                            <span>→</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="catalog-goods__compare compare-catalog-goods">
+                                                        <div class="compare-catalog-goods__checkbox">
+                                                            <input id="kitchenHoodsTL-G-IX-BL-1" type='checkbox'
+                                                                name='form[]' class='compare-catalog-goods__input'>
+                                                            <label for="kitchenHoodsTL-G-IX-BL-1"
+                                                                class="compare-catalog-goods__label">
+                                                                порівняти
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-goods__column">
+                                            <div class="catalog-goods__item">
+                                                <div class="catalog-goods__image-block">
+                                                    <a href="" class="catalog-goods__images">
+                                                        <img src="img/cooker-hoods/cooker-hoods-4/01.jpg"
+                                                            alt="cooker-hood" class="catalog-goods__img">
+                                                        <img src="img/cooker-hoods/cooker-hoods-4/02.jpg"
+                                                            alt="cooker-hood" class="catalog-goods__img-hover">
+                                                    </a>
+                                                </div>
+                                                <div class="catalog-goods__body">
+                                                    <a href="" class="catalog-goods__name">KH IX</a>
+                                                    <ul
+                                                        class="catalog-goods__characteristics characteristics-catalog-goods">
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Купольна витяжка</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Продуктивність: 600 м3/год, 700 м3/год</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Ширина: 50 см, 60 см</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>3 швидкості</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>LED освітлення: 2 х 5 Вт</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Механічне управління</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Рециркуляція/відведення</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>5-шарові жирові фільтри</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="catalog-goods__bottom">
+                                                    <div class="catalog-goods__price price-catalog-goods">
+                                                        <div class="price-catalog-goods__old-price">
+                                                        </div>
+                                                        <div class="price-catalog-goods__row">
+                                                            <div class="price-catalog-goods__current-price">
+                                                                5929 <span>грн</span>
+                                                            </div>
+                                                            <div
+                                                                class="price-catalog-goods__status status-catalog-goods">
+                                                                <span class="status-catalog-goods__available">
+                                                                    в наявності
+                                                                </span>
+                                                                <span class="status-catalog-goods__not-available">
+                                                                    немає в наявності
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="catalog-goods__btns">
+                                                        <a href=""
+                                                            class="catalog-goods__btn catalog-goods__btn_buy active">
+                                                            <span>Купити</span>
+                                                            <span></span>
+                                                        </a>
+                                                        <a href=""
+                                                            class="catalog-goods__btn catalog-goods__btn_in-basket">
+                                                            <span>У корзині</span>
+                                                            <span></span>
+                                                        </a>
+                                                        <a href=""
+                                                            class="catalog-goods__btn catalog-goods__btn_not-available">
+                                                            <span>Повідомити про наявність</span>
+                                                            <span></span>
+                                                        </a>
+                                                        <a href=""
+                                                            class="catalog-goods__btn catalog-goods__btn_detail active">
+                                                            <span>Детальніше</span>
+                                                            <span>→</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="catalog-goods__compare compare-catalog-goods">
+                                                        <div class="compare-catalog-goods__checkbox">
+                                                            <input id="kitchenHoodsKH-IX-1" type='checkbox'
+                                                                name='form[]' class='compare-catalog-goods__input'>
+                                                            <label for="kitchenHoodsKH-IX-1"
+                                                                class="compare-catalog-goods__label">
+                                                                порівняти
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-goods__column">
+                                            <div class="catalog-goods__item">
+                                                <div class="catalog-goods__image-block">
+                                                    <a href="" class="catalog-goods__images">
+                                                        <img src="img/cooker-hoods/cooker-hoods-3/01.jpg"
+                                                            alt="cooker-hood" class="catalog-goods__img">
+                                                        <img src="img/cooker-hoods/cooker-hoods-3/02.jpg"
+                                                            alt="cooker-hood" class="catalog-goods__img-hover">
+                                                    </a>
+                                                </div>
+                                                <div class="catalog-goods__body">
+                                                    <a href="" class="catalog-goods__name">TL G IX BL</a>
+                                                    <ul
+                                                        class="catalog-goods__characteristics characteristics-catalog-goods">
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Телескопічна витяжка</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Продуктивність: 700 м3/год</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>LED освітлення: 2 х 5 Вт</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Ширина: 50 см, 60 см</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Передня планка декорована склом</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Механічне управління</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>Відведення</span>
+                                                        </li>
+                                                        <li class="characteristics-catalog-goods__item">
+                                                            <span>5-шарові жирові фільтри</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="catalog-goods__bottom">
+                                                    <div class="catalog-goods__price price-catalog-goods">
+                                                        <div class="price-catalog-goods__old-price">
+                                                            22 999 <span>грн</span>
+                                                        </div>
+                                                        <div class="price-catalog-goods__row">
+                                                            <div class="price-catalog-goods__current-price">
+                                                                20 999 <span>грн</span></span>
+                                                            </div>
+                                                            <div
+                                                                class="price-catalog-goods__status status-catalog-goods">
+                                                                <span class="status-catalog-goods__available">
+                                                                    в наявності
+                                                                </span>
+                                                                <span class="status-catalog-goods__not-available">
+                                                                    немає в наявності
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="catalog-goods__btns">
+                                                        <a href="" class="catalog-goods__btn catalog-goods__btn_buy">
+                                                            <span>Купити</span>
+                                                            <span></span>
+                                                        </a>
+                                                        <a href=""
+                                                            class="catalog-goods__btn catalog-goods__btn_in-basket">
+                                                            <span>У корзині</span>
+                                                            <span></span>
+                                                        </a>
+                                                        <a href=""
+                                                            class="catalog-goods__btn catalog-goods__btn_not-available active">
+                                                            <span>Повідомити про наявність</span>
+                                                            <span></span>
+                                                        </a>
+                                                        <a href=""
+                                                            class="catalog-goods__btn catalog-goods__btn_detail active">
+                                                            <span>Детальніше</span>
+                                                            <span>→</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="catalog-goods__compare compare-catalog-goods">
+                                                        <div class="compare-catalog-goods__checkbox">
+                                                            <input id="kitchenHoodsTL-G-IX-BL-2" type='checkbox'
+                                                                name='form[]' class='compare-catalog-goods__input'>
+                                                            <label for="kitchenHoodsTL-G-IX-BL-2"
+                                                                class="compare-catalog-goods__label">
+                                                                порівняти
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-goods__column catalog-goods-news">
+                                            <div class="catalog-goods__item">
+                                                <div class="catalog-goods-news__image-block">
+                                                    <a href="" class="catalog-goods-news__image">
+                                                        <img src="img/catalog/catalog-news/01.jpg" alt="catalog-news">
+                                                    </a>
+                                                </div>
+                                                <div class="catalog-goods-news__body">
+                                                    <a href="" class="catalog-goods-news__title">
+                                                        Вибір року №1- витяжки Pyramida
+                                                    </a>
+                                                    <div class="catalog-goods-news__text">
+                                                        За результатами всеукраїнського дослідження споживчих
+                                                        вподобань,
+                                                        яку проводить міжнародна маркетингова компанія Ipsos в
+                                                        Україні,
+                                                        Pyramida знов здобула відзнаку Вибір року №1 в категорії
+                                                        Витяжки!
+                                                    </div>
+                                                </div>
+                                                <div class="catalog-goods-news__bottom">
+                                                    <a href="" class="catalog-goods-news__btn">
+                                                        <span>Детальніше</span>
+                                                        <span>→</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__baner baner-catalog">
+                    <div class="baner-catalog__img ibg">
+                        <img src="img/catalog/baner.jpg" alt="baner">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__body">
+            <div class="footer__row">
+                <div class="footer__column column-footer footer__column_1">
+                    <div class="column-footer__inner">
+                        <a href="index.html" class="footer__logo">
+                            <img src="img/logo.svg" alt="logo">
+                        </a>
+                        <div class="footer__socials socials-footer">
+                            <ul class="socials-footer__list">
+                                <li class="socials-footer__item socials-footer__item_facebook">
+                                    <a href="" class="socials-footer__link">
+                                        <img src="img/icons/socials/facebook.svg" alt="facebook">
+                                    </a>
+                                </li>
+                                <li class="socials-footer__item socials-footer__item_youtube">
+                                    <a href="" class="socials-footer__link">
+                                        <img src="img/icons/socials/youtube.svg" alt="youtube">
+                                    </a>
+                                </li>
+                                <li class="socials-footer__item socials-footer__item_instagram">
+                                    <a href="" class="socials-footer__link">
+                                        <img src="img/icons/socials/instagram.svg" alt="instagram">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__copyright" data-da="footer__bottom, 0, 992">
+                            Copyright © 2023 Pyramida.<br> Усі права захищені
+                        </div>
+                        <div class="footer__pay-system pay-system-footer" data-da="footer__bottom, 1, 992">
+                            <ul class="pay-system-footer__list">
+                                <li class="pay-system-footer__item pay-system-footer__item_mastercard">
+                                    <img src="img/pay-system/mastercard.svg" alt="mastercard">
+                                </li>
+                                <li class="pay-system-footer__item pay-system-footer__item_visa">
+                                    <img src="img/pay-system/visa.svg" alt="visa">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__column footer__column_2">
+                    <div class="column-footer__inner">
+                        <nav class="footer__menu menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Про бренд</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Новини</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Сервіс</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Де купити</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Партнерство</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link menu-footer__link_double-text">
+                                        <span>Доставка та оплата</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__column footer__column_3">
+                    <div class="column-footer__inner">
+                        <nav class="footer__menu menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Витяжки</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Варильні поверхні</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Духові шафи</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Посудомийні машини</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Мікрохвильові печі</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Аксесуари</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__column footer__column_4">
+                    <div class="column-footer__inner">
+                        <a href="tel:0800604463" class="footer__phone">0 800 604 463</a>
+                        <div class="footer__info-text">Гаряча лінія з питань сервісу</div>
+                        <div class="footer__text">Дзвоніть пн-пт з 10:00 до 17:00</div>
+                        <div class="footer__small-text">
+                            Дзвінки зі стаціонарних та мобільних<br> телефонів в межах України безкоштовні
+                        </div>
+                        <div class="footer__btns">
+                            <a href="/?Event=DownloadFile&amp;file=catalog"
+                                class="footer__btn footer__btn_download btn">
+                                <span>завантажити каталог</span>
+                            </a>
+                            <a href="" class="footer__btn footer__btn_write open-modal-feedback btn">
+                                <span>написати нам</span>
+                            </a>
+                        </div>
+                        <div class="scroll-top"></div>
+                        <div class="footer__bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

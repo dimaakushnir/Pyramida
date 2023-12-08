@@ -1,0 +1,2303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" /> -->
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <title></title>
+</head>
+
+<body>
+    <!-- При пустому кошику потрібен клас empty -->
+    <div class="modal modal-basket">
+        <div class="modal__inner modal-basket__inner">
+            <a href="" class="modal__close modal-basket__close close"></a>
+            <div class="modal__body modal-basket__body">
+                <div class="modal-basket__top top-modal-basket">
+                    <div class="top-modal-basket__title-block">
+                        <span></span>
+                        <div class="top-modal-basket__title">Товари в кошику</div>
+                        <span></span>
+                    </div>
+                    <div class="top-modal-basket__message">У вашій корзині ще немає товарів</div>
+                </div>
+                <div class="modal-basket__main cart-products">
+                    <div class="cart-products__header">
+                        <div class="cart-products__header-item cart-products__header-item--product">Товар</div>
+                        <div class="cart-products__header-item cart-products__header-item--quantity">
+                            Кількість
+                        </div>
+                        <div class="cart-products__header-item cart-products__header-item--price">Ціна</div>
+                    </div>
+                    <div class="cart-products__body">
+                        <div class="cart-products__item">
+                            <div class="cart-product">
+                                <div class="cart-product__details">
+                                    <div class="cart-product__image-wrap">
+                                        <img class="cart-product__image" src="img/cooker-hoods/cooker-hoods-1/1.jpg"
+                                            alt="KH 60 RUSTICO IV">
+                                    </div>
+                                    <div class="cart-product__info-wrap">
+                                        KH 60 RUSTICO IV </div>
+                                </div>
+                                <div class="cart-product__price price-primary">
+                                    <div class="cart-product__cost">Ціна</div>
+                                    <div class="cart-product__cost-price">6129.00 грн</div>
+                                </div>
+                                <div class="cart-product__costs">
+                                    <div class="cart-product__quantity-title">Кількість</div>
+                                    <div class="cart-product__quantity">
+                                        <div class="cart-product__button-wrapper adaptive-left">
+                                            <button class="button-primary  minus"></button>
+                                        </div>
+                                        <input type="text" value="1">
+                                        <div class="cart-product__button-wrapper adaptive-right">
+                                            <button class="button-primary plus"></button>
+                                            <button style="display: none;" class="button-primary minus"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-product__controls-wrapper">
+                                    <div class="cart-product__price price-total">
+                                        <div class="cart-product__cost">Сума</div>
+                                        <div class="cart-product__cost-sum">6129.00 грн</div>
+                                    </div>
+                                    <div class="cart-product__controls">
+                                        <button class="remove">Видалити</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-product">
+                                <div class="cart-product__details">
+                                    <div class="cart-product__image-wrap">
+                                        <img class="cart-product__image" src="img/cooker-hoods/cooker-hoods-2/1.jpg"
+                                            alt="NR 60 M WH">
+                                    </div>
+                                    <div class="cart-product__info-wrap">
+                                        NR 60 M WH </div>
+                                </div>
+                                <div class="cart-product__price price-primary">
+                                    <div class="cart-product__cost">Ціна</div>
+                                    <div class="cart-product__cost-price">7709.00 грн</div>
+                                </div>
+                                <div class="cart-product__costs">
+                                    <div class="cart-product__quantity-title">Кількість</div>
+                                    <div class="cart-product__quantity">
+                                        <div class="cart-product__button-wrapper adaptive-left">
+                                            <button class="button-primary basket1 minus"></button>
+                                        </div>
+                                        <input type="text" value="1">
+                                        <div class="cart-product__button-wrapper adaptive-right">
+                                            <button class="button-primary plus"></button>
+                                            <button style="display:none" class="button-primary minus"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-product__controls-wrapper">
+                                    <div class="cart-product__price price-total">
+                                        <div class="cart-product__cost">Сума</div>
+                                        <div class="cart-product__cost-sum">7709.00 грн</div>
+                                    </div>
+                                    <div class="cart-product__controls">
+                                        <button class="remove">Видалити</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-basket__bottom bottom-modal-basket">
+                    <div class="bottom-modal-basket__row">
+                        <a href="" class="bottom-modal-basket__btn bottom-modal-basket__btn_continue btn close">
+                            <span>←</span><span>Продовжити покупки</span>
+                        </a>
+                        <div class="bottom-modal-basket__total total-bottom-modal-basket total">
+                            <span class="total-bottom-modal-basket__text total__text">На суму:</span>
+                            <span class="total-bottom-modal-basket__sum total__sum">0</span>
+                            <span class="total-bottom-modal-basket__currency total__currency">грн</span>
+                        </div>
+                        <a href="" class="bottom-modal-basket__btn bottom-modal-basket__btn_payment btn">
+                            <span>Оформити замовлення</span><span>→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-search">
+        <div class="modal__inner modal-search__inner">
+            <a href="" class="modal__close modal-search__close close"></a>
+            <div class="modal__body modal-search__body">
+                <div class="modal-search__top top-modal-search">
+                    <div class="top-modal-search__title">
+                        <span>Доброго дня, що ви шукаєте?</span>
+                    </div>
+                </div>
+                <div class="modal-search__main">
+                    <form action="#" class="modal-search__form form-modal-search">
+                        <div class="form-modal-search__item">
+                            <input placeholder="Введіть текст тут" autocomplete='off' type='text' name='form[]'
+                                class='form-modal-search__input'>
+                        </div>
+                        <button type='submit' class='form-modal-search__btn btn btn_violet'>
+                            <span>Пошук</span>
+                            <span>→</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-feedback">
+        <div class="modal__inner modal-feedback__inner">
+            <a href="" class="modal__close modal-feedback__close close"></a>
+            <div class="modal__body modal-feedback__body">
+                <div class="modal-feedback__top top-modal-feedback">
+                    <div class="top-modal-feedback__title-block">
+                        <span></span>
+                        <div class="top-modal-feedback__title">Форма зв'язку</div>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="modal-feedback__main">
+                    <form action="#" class="modal-feedback__form form-modal-feedback">
+                        <div class="form-modal-feedback__text">
+                            Місця, відмічені*, обов'язкові для заповнення
+                        </div>
+                        <div class="form-modal-feedback__item">
+                            <label for="formFeedbackName" class="form-modal-feedback__label">Ім'я*</label>
+                            <input required id="formFeedbackName" autocomplete='off' type='text' name='form[]'
+                                class='form-modal-feedback__input'>
+                        </div>
+                        <div class="form-modal-feedback__item">
+                            <label for="formFeedbackPhone" class="form-modal-feedback__label">
+                                Контактний телефон*
+                            </label>
+                            <input required id="formFeedbackPhone" placeholder="+38 (xxx) xxx-xx-xx" autocomplete='off'
+                                type='tel' name='form[]' class='form-modal-feedback__input tel'>
+                        </div>
+                        <div class="form-modal-feedback__item">
+                            <label for="formFeedbackEmail" class="form-modal-feedback__label">E-mail*</label>
+                            <input required id="formFeedbackEmail" autocomplete='off' type='email' name='form[]'
+                                class='form-modal-feedback__input'>
+                        </div>
+                        <div class="form-modal-feedback__item">
+                            <label for="formFeedbackMessage" class="form-modal-feedback__label">Повідомлення</label>
+                            <textarea name="form[]" id="formFeedbackMessage"
+                                class="form-modal-feedback__textatea"></textarea>
+                        </div>
+                        <div class="form-modal-feedback__item">
+                            <div class="form-modal-feedback__small-text">
+                                Підтвердіть, що Ви не робот.
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                        </div>
+                        <div class="form-modal-feedback__item">
+                            <div class="form-modal-feedback__small-text">
+                                <p>Додайте до повідомлення фото <span>чека покупки</span> техніки та фото
+                                    <span>гарантійного талону</span>.
+                                </p>
+                                <p>Ви можете додати максимум 5 файлів.</p>
+                                <p>Рекомендований розмір - менше 10 МБ.</p>
+                            </div>
+                            <div class="form-modal-feedback__bottom">
+
+                                <div class="form-modal-feedback__file file">
+                                    <div class="file__message">Ви вже добавили 5 файлів.</div>
+                                    <div class="file__body">
+                                        <input type='file' name='form[]' class='file__input'>
+                                        <div class="file__button btn btn_grey">
+                                            <span>Вкласти додаток</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type='submit' class='form-modal-feedback__btn btn btn_violet'>
+                                    <span>Надіслати</span>
+                                    <span>→</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-modal-feedback__previews file-previews"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-notification">
+        <div class="modal__inner modal-notification__inner">
+            <a href="" class="modal__close modal-notification__close close"></a>
+            <div class="modal__body modal-notification__body">
+                <div class="modal-notification__content">
+                    <div class="modal-notification__top">
+                        <div class="modal-notification__image-block">
+                            <img class="modal-notification__image" src="" alt="">
+                        </div>
+                        <div class="modal-notification__info info-modal-notification">
+                            <div class="info-modal-notification__category">Витяжка</div>
+                            <div class="info-modal-notification__row">
+                                <div class="info-modal-notification__brand">Pyramida</div>
+                                <div class="info-modal-notification__model"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-notification__main">
+                        <form action="#" class="modal-notification__form form-modal-notification">
+                            <div class="form-modal-notification__text">
+                                Місця, відмічені*, обов'язкові для заповнення
+                            </div>
+                            <div class="form-modal-notification__item">
+                                <label for="formFeedbackName" class="form-modal-notification__label">Ім'я*</label>
+                                <input required id="formFeedbackName" autocomplete='off' type='text' name='form[]'
+                                    class='form-modal-notification__input'>
+                            </div>
+                            <div class="form-modal-notification__item">
+                                <label for="formFeedbackPhone" class="form-modal-notification__label">
+                                    Контактний телефон*
+                                </label>
+                                <input required id="formFeedbackPhone" placeholder="+38 (xxx) xxx-xx-xx"
+                                    autocomplete='off' type='tel' name='form[]'
+                                    class='form-modal-notification__input tel'>
+                            </div>
+                            <div class="form-modal-notification__item">
+                                <label for="formFeedbackEmail" class="form-modal-notification__label">E-mail*</label>
+                                <input required id="formFeedbackEmail" autocomplete='off' type='email' name='form[]'
+                                    class='form-modal-notification__input'>
+                            </div>
+                            <div class="form-modal-notification__text form-modal-notification__text_max-width">
+                                Ми надішлемо вам листа, як тільки товар знову буде в наявності
+                            </div>
+                            <button type='submit' class='form-modal-notification__btn btn btn_violet'>
+                                <span>Буду чекати</span>
+                                <span>→</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-notification__thank thank-modal-notification">
+                    <div class="thank-modal-notification__text">
+                        Коли товар з'явиться в наявності, ми відправимо повідомлення на вказану вами електронну
+                        адресу. А поки, можливо ви знайдете альтернативу в нашому каталозі. Необхідна допомога з
+                        вибором? Телефонуйте 0 800 60 222 0. Гарного дня ;)
+                    </div>
+                    <a href="" class="thank-modal-notification__btn btn_violet">
+                        <span>←</span>
+                        <span>Продовжити покупки</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-scheme">
+        <div class="modal__inner modal-scheme__inner">
+            <a href="" class="modal__close modal-scheme__close close"></a>
+            <div class="modal__body modal-scheme__body">
+                <div class="modal-scheme__content">
+                    <div class="modal-scheme__top">
+                        <div class="modal-scheme__title">Схема вбудовування</div>
+                        <div class="modal-scheme__model"></div>
+                    </div>
+                    <div class="modal-scheme__main">
+                        <div class="modal-scheme__image">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__additionally additionally-header">
+                <div class="additionally-header__container container">
+                    <div class="additionally-header__body">
+                        <a href="" class="additionally-header__basket basket-icon open-modal-basket">
+                            <!-- При пустому кошику потрібен клас empty -->
+                            <span class="basket-icon__count">2</span>
+                            <span>Кошик</span>
+                        </a>
+                        <div class="additionally-header__call-back-block call-back-block">
+                            <a href="" class="call-back-block__close">
+                                <img src="img/icons/tel_close.png" alt="tel_close">
+                            </a>
+                            <div class="call-back-block__info info-call-back-block">
+                                <div class="info-call-back-block__schedule">Будні дні з 10:00 до 17:00</div>
+                                <div class="info-call-back-block__tel">
+                                    <a href="tel:0800604463">0 800 604 463</a>
+                                </div>
+                                <div class="info-call-back-block__text">Гаряча лінія з питань сервісу</div>
+                            </div>
+                            <form action="" class="call-back-block__form form-call-back-block">
+                                <div class="form-call-back-block__text">
+                                    Ви також можете замовити дзвінок і ми Вам зателефонуємо
+                                </div>
+                                <div class="form-call-back-block__item">
+                                    <label for="CallBackTopic" class="form-call-back-block__label">Тема
+                                        повідомлення</label>
+                                    <div class="form-call-back-block__dropdown dropdown">
+                                        <button class='dropdown__button button-dropdown'>
+                                            <span class="button-dropdown__text">Купівля</span>
+                                            <div class="button-dropdown__trigger trigger-button-dropdown">
+                                                <div class="trigger-button-dropdown__arrow"></div>
+                                            </div>
+                                        </button>
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__list-item selected" data-dropdown="Купівля">Купівля
+                                            </li>
+                                            <li class="dropdown__list-item" data-dropdown="Сервіс">Сервіс</li>
+                                        </ul>
+                                        <input id="CallBackTopic" type='text' name='form[]' value='Купівля'
+                                            class='dropdown__input-hidden'>
+                                    </div>
+                                </div>
+                                <div class="form-call-back-block__item">
+                                    <label for="CallBackName" class="form-call-back-block__label">Ім'я</label>
+                                    <input id="CallBackName" autocomplete='off' type='text' name='form[]'
+                                        class='form-call-back-block__input'>
+                                </div>
+                                <div class="form-call-back-block__item">
+                                    <label for="CallBackTel" class="form-call-back-block__label">Контактний
+                                        телефон</label>
+                                    <input id="CallBackTel" placeholder="+38 (xxx) xxx-xx-xx" autocomplete='off'
+                                        type='tel' name='form[]' class='form-call-back-block__input tel'>
+                                </div>
+                                <hr>
+                                <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                                <div class="form-call-back-block__block">
+                                    <button type='submit' class='form-call-back-block__btn btn btn_violet'>Замовити
+                                        дзвінок</button>
+                                </div>
+                            </form>
+                            <div class="call-back-block__message">
+                                <span>
+                                    Ми зателефонуємо Вам найближчикм часом та обов’язково допоможемо з вибором найкращої
+                                    техніки
+                                </span>
+                                <br><br>
+                                <img src="../img/icons/tel_smile.png" alt="tel_smile">
+                            </div>
+                        </div>
+                        <div class="additionally-header__call-back-button">
+                            <span>Замовити дзвінок</span>
+                        </div>
+                        <div class="additionally-header__schedule">Будні дні з 10:00 до 17:00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__top top-header">
+                <div class="top-header__container container">
+                    <div class="top-header__body">
+                        <div class="top-header__row">
+                            <nav class="top-header__menu menu-top-header" data-da="mobile-header__last-menu, 0, 767.98">
+                                <ul class="menu-top-header__list">
+                                    <li class="menu-top-header__item">
+                                        <a href="" class="menu-top-header__link">Про бренд</a>
+                                    </li>
+                                    <li class="menu-top-header__item">
+                                        <a href="news.html" class="menu-top-header__link">Новини</a>
+                                    </li>
+                                    <li class="menu-top-header__item">
+                                        <a href="" class="menu-top-header__link">Сервіс</a>
+                                    </li>
+                                    <li class="menu-top-header__item">
+                                        <a href="" class="menu-top-header__link">Де купити</a>
+                                    </li>
+                                    <li class="menu-top-header__item">
+                                        <a href="" class="menu-top-header__link">Партнерство</a>
+                                    </li>
+                                    <li class="menu-top-header__item">
+                                        <a href="" class="menu-top-header__link">Доставка та оплата</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="top-header__navigation-icons navigation-icons-top-header"
+                                data-da="tollbar-header__inner, 0, 991.98">
+                                <ul class="navigation-icons-top-header__items">
+                                    <li class="navigation-icons-top-header__item">
+                                        <a href=""
+                                            class="navigation-icons-top-header__link navigation-icons-top-header__link_search open-modal-search">Пошук</a>
+                                    </li>
+                                    <li class="navigation-icons-top-header__item">
+                                        <a href=""
+                                            class="navigation-icons-top-header__link navigation-icons-top-header__link_basket basket-icon open-modal-basket">
+                                            <!-- При пустому кошику потрібен клас empty -->
+                                            <span class="basket-icon__count">2</span>
+                                            <span>Кошик</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__toolbar tollbar-header">
+                <div class="tollbar-header__container container">
+                    <div class="tollbar-header__body">
+                        <div class="tollbar-header__row">
+                            <div class="tollbar-header__logo-block">
+                                <a href="index.html" class="tollbar-header__logo">
+                                    <img src="img/logo.svg" alt="logo">
+                                </a>
+                            </div>
+                            <div class="tollbar-header__inner">
+                                <nav class="tollbar-header__menu menu-tollbar-header"
+                                    data-da="mobile-header__first-menu, 0, 991.98">
+                                    <ul class="menu-tollbar-header__list">
+                                        <li class="menu-tollbar-header__item has-submenu">
+                                            <a href="" class="menu-tollbar-header__link active">Витяжки</a>
+                                            <div class="menu-tollbar-header__sub-menu sub-menu">
+                                                <div class="sub-menu__top top-sub-menu">
+                                                    <button class="top-sub-menu__back">
+                                                        <img src="img/icons/arrow_back.png" alt="arrow_back">
+                                                    </button>
+                                                    <div class="top-sub-menu__title">Витяжки</div>
+                                                    <div class="mobile-header__close"></div>
+                                                </div>
+                                                <div class="sub-menu__baner">
+                                                    <img src="img/cooker-hoods/baner.jpg" alt="cooker-hoods">
+                                                </div>
+                                                <div class="sub-menu__body">
+                                                    <div class="sub-menu__row">
+                                                        <div class="sub-menu__column sub-menu__column_links">
+                                                            <div class="sub-menu__title">
+                                                                <span>Тип</span>
+                                                            </div>
+                                                            <nav class="sub-menu__menu">
+                                                                <ul class="sub-menu__list">
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Усі моделі</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Вертикальні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Похилі</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Декоративні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Купольні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Вбудовувані</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Плоскі</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                        <div class="sub-menu__column sub-menu__column_images">
+                                                            <div class="sub-menu__images images-sub-menu">
+                                                                <div class="images-sub-menu__row">
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/cooker-hoods/1.png"
+                                                                                    alt="cooker-hood">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/cooker-hoods/2.png"
+                                                                                    alt="cooker-hood">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/cooker-hoods/3.png"
+                                                                                    alt="cooker-hood">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-tollbar-header__item has-submenu">
+                                            <a href="" class="menu-tollbar-header__link">Варильні поверхні</a>
+                                            <div class="menu-tollbar-header__sub-menu sub-menu">
+                                                <div class="sub-menu__top top-sub-menu">
+                                                    <button class="top-sub-menu__back">
+                                                        <img src="img/icons/arrow_back.png" alt="arrow_back">
+                                                    </button>
+                                                    <div class="top-sub-menu__title">Варильні поверхні</div>
+                                                    <div class="mobile-header__close"></div>
+                                                </div>
+                                                <div class="sub-menu__baner">
+                                                    <img src="img/cooking-surfaces/baner.jpg" alt="cooking-surfaces">
+                                                </div>
+                                                <div class="sub-menu__body">
+                                                    <div class="sub-menu__row">
+                                                        <div class="sub-menu__column sub-menu__column_links">
+                                                            <div class="sub-menu__title">
+                                                                <span>Тип</span>
+                                                            </div>
+                                                            <nav class="sub-menu__menu">
+                                                                <ul class="sub-menu__list">
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Усі моделі</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Індукційні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Електричні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Газові</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Комбіновані</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                        <div class="sub-menu__column sub-menu__column_images">
+                                                            <div class="sub-menu__images images-sub-menu">
+                                                                <div class="images-sub-menu__row">
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/cooking-surfaces/1.jpg"
+                                                                                    alt="cooking-surfaces">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/cooking-surfaces/2.jpg"
+                                                                                    alt="cooking-surfaces">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/cooking-surfaces/3.jpg"
+                                                                                    alt="cooking-surfaces">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-tollbar-header__item has-submenu">
+                                            <a href="" class="menu-tollbar-header__link">Духові шафи</a>
+                                            <div class="menu-tollbar-header__sub-menu sub-menu">
+                                                <div class="sub-menu__top top-sub-menu">
+                                                    <button class="top-sub-menu__back">
+                                                        <img src="img/icons/arrow_back.png" alt="arrow_back">
+                                                    </button>
+                                                    <div class="top-sub-menu__title">Духові шафи</div>
+                                                    <div class="mobile-header__close"></div>
+                                                </div>
+                                                <div class="sub-menu__baner">
+                                                    <img src="img/ovens/baner.jpg" alt="ovens">
+                                                </div>
+                                                <div class="sub-menu__body">
+                                                    <div class="sub-menu__row">
+                                                        <div class="sub-menu__column sub-menu__column_links">
+                                                            <div class="sub-menu__title">
+                                                                <span>Тип</span>
+                                                            </div>
+                                                            <nav class="sub-menu__menu">
+                                                                <ul class="sub-menu__list">
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Усі моделі</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>4-режимні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>5-режимні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>6-режимні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>7-режимні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>8-режимні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>9-режимні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>10-режимні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>18-режимні</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                        <div class="sub-menu__column sub-menu__column_images">
+                                                            <div class="sub-menu__images images-sub-menu">
+                                                                <div class="images-sub-menu__row">
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/ovens/1.jpg" alt="ovens">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/ovens/2.jpg" alt="ovens">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/ovens/3.jpg" alt="ovens">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-tollbar-header__item">
+                                            <a href="" class="menu-tollbar-header__link">Посудомийні машини</a>
+                                        </li>
+                                        <li class="menu-tollbar-header__item">
+                                            <a href="" class="menu-tollbar-header__link">Мікрохвильові печі</a>
+                                        </li>
+                                        <li class="menu-tollbar-header__item has-submenu">
+                                            <a href="" class="menu-tollbar-header__link">Аксесуари</a>
+                                            <div class="menu-tollbar-header__sub-menu sub-menu">
+                                                <div class="sub-menu__top top-sub-menu">
+                                                    <button class="top-sub-menu__back">
+                                                        <img src="img/icons/arrow_back.png" alt="arrow_back">
+                                                    </button>
+                                                    <div class="top-sub-menu__title">Аксесуари</div>
+                                                    <div class="mobile-header__close"></div>
+                                                </div>
+                                                <div class="sub-menu__baner">
+                                                    <img src="img/accessories/baner.jpg" alt="accessories">
+                                                </div>
+                                                <div class="sub-menu__body">
+                                                    <div class="sub-menu__row">
+                                                        <div class="sub-menu__column sub-menu__column_links">
+                                                            <div class="sub-menu__title">
+                                                                <span>Тип</span>
+                                                            </div>
+                                                            <nav class="sub-menu__menu">
+                                                                <ul class="sub-menu__list">
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Усі моделі</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Для витяжок</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Для поверхонь</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Захисні приладдя</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="sub-menu__item">
+                                                                        <a href="" class="sub-menu__link">
+                                                                            <span>Пароварка</span>
+                                                                            <span>→</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                        <div class="sub-menu__column sub-menu__column_images">
+                                                            <div class="sub-menu__images images-sub-menu">
+                                                                <div class="images-sub-menu__row">
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/accessories/1.jpg"
+                                                                                    alt="accessories">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/accessories/2.png"
+                                                                                    alt="accessories">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="images-sub-menu__column">
+                                                                        <div class="images-sub-menu__item">
+                                                                            <a href="" class="images-sub-menu__link">
+                                                                                <img src="img/accessories/3.png"
+                                                                                    alt="accessories">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="tollbar-header__burger">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="mobile-header">
+            <div class="mobile-header__container container">
+                <div class="mobile-header__body">
+                    <a href="" class="mobile-header__close"></a>
+                    <div class="mobile-header__top">
+                        <div class="mobile-header__lang lang-mobile-header">
+                            <ul class="lang-mobile-header__list">
+                                <li class="lang-mobile-header__item">
+                                    <a href="" class="lang-mobile-header__link">рус</a>
+                                </li>
+                                <li class="lang-mobile-header__item">
+                                    <a href="" class="lang-mobile-header__link active">укр</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mobile-header__first-menu"></div>
+                    <div class="mobile-header__last-menu"></div>
+                    <div class="mobile-header__bottom">
+                        <div class="modal-search__top top-modal-search">
+                            <div class="top-modal-search__title">
+                                <span>Доброго дня, що ви шукаєте?</span>
+                            </div>
+                        </div>
+                        <div class="modal-search__main">
+                            <form action="#" class="modal-search__form form-modal-search">
+                                <div class="form-modal-search__item">
+                                    <input placeholder="Введіть текст тут" autocomplete='off' type='text' name='form[]'
+                                        class='form-modal-search__input'>
+                                </div>
+                                <button type='submit' class='form-modal-search__btn btn btn_violet'>
+                                    <span>Пошук</span>
+                                    <span>→</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__container container">
+                <div class="breadcrumbs__body">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">Головна</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">Витяжки</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span>TL G IX BL</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <main role="main">
+            <div class="scroll-top scroll-top-fixed"></div>
+            <section class="product">
+                <div class="product__top top-product">
+                    <div class="top-product__container container">
+                        <div class="top-product__row">
+                            <div class="top-product__series series-top-product">
+                                <div class="series-top-product__label">Серія</div>
+                                <div class="series-top-product__value">ВБУДОВУВАНІ</div>
+                                <div class="series-top-product__name">TL G IX BL</div>
+                            </div>
+                            <div class="top-product__links links-top-product">
+                                <ul class="links-top-product__list">
+                                    <li class="links-top-product__item">
+                                        <a data-link="characteristics" href=""
+                                            class="links-top-product__link">Характеристики</a>
+                                    </li>
+                                    <li class="links-top-product__item">
+                                        <a data-link="description" href="" class="links-top-product__link">Опис</a>
+                                    </li>
+                                    <li class="links-top-product__item">
+                                        <a data-link="guarantee" href="" class="links-top-product__link">Гарантія</a>
+                                    </li>
+                                    <li class="links-top-product__item">
+                                        <a data-link="video" href="" class="links-top-product__link">Відео</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__body">
+                    <div class="product__container container">
+                        <div class="product__compare compare-content-catalog">
+                            <div class="compare-content-catalog__title">Додані до порівняння</div>
+                            <div class="compare-content-catalog__body">
+                                <div class="compare-content-catalog__list">
+                                </div>
+                                <div class="compare-content-catalog__btns">
+                                    <a href="" class="compare-content-catalog__btn-compare btn_yellow">Порівняти</a>
+                                    <a href="" class="compare-content-catalog__btn-delete-all">
+                                        <span>Скинути все</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__main">
+                            <div class="product__card card-product">
+                                <div class="card-product__row">
+                                    <div class="card-product__column">
+                                        <div class="card-product__sliders">
+                                            <div class="card-product__slider_2 slider-card-product">
+                                                <div
+                                                    class="slider-card-product__btn slider-card-product__btn_prev slider2-card-product__btn_prev">
+                                                    <span>→</span>
+                                                </div>
+                                                <div class="slider-card-product__inner">
+                                                    <div class="slider-card-product__swiper_2 swiper">
+                                                        <div class="slider-card-product__wrapper swiper-wrapper">
+                                                            <div
+                                                                class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                                <div class="slide-slider-card-product__item">
+                                                                    <img src="img/cooker-hoods/cooker-hoods-3/01.jpg"
+                                                                        alt="TL G IX BL">
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                                <div class="slide-slider-card-product__item">
+                                                                    <img src="img/cooker-hoods/cooker-hoods-3/02.jpg"
+                                                                        alt="TL G IX BL">
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                                <div class="slide-slider-card-product__item">
+                                                                    <img src="img/cooker-hoods/cooker-hoods-3/03.jpg"
+                                                                        alt="TL G IX BL">
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                                <div class="slide-slider-card-product__item">
+                                                                    <img src="img/cooker-hoods/cooker-hoods-3/04.jpg"
+                                                                        alt="TL G IX BL">
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                                <div class="slide-slider-card-product__item">
+                                                                    <img src="img/cooker-hoods/cooker-hoods-3/05.jpg"
+                                                                        alt="TL G IX BL">
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                                <div class="slide-slider-card-product__item">
+                                                                    <img src="img/cooker-hoods/cooker-hoods-3/06.jpg"
+                                                                        alt="TL G IX BL">
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                                <div class="slide-slider-card-product__item">
+                                                                    <img src="img/cooker-hoods/cooker-hoods-3/07.jpg"
+                                                                        alt="TL G IX BL">
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                                <div class="slide-slider-card-product__item">
+                                                                    <img src="img/cooker-hoods/cooker-hoods-3/08.jpg"
+                                                                        alt="TL G IX BL">
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                                <div class="slide-slider-card-product__item">
+                                                                    <img src="img/cooker-hoods/cooker-hoods-3/09.jpg"
+                                                                        alt="TL G IX BL">
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                                <div class="slide-slider-card-product__item">
+                                                                    <img src="img/cooker-hoods/cooker-hoods-3/10.jpg"
+                                                                        alt="TL G IX BL">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="slider-card-product__btn slider-card-product__btn_next slider2-card-product__btn_next">
+                                                    <span>→</span>
+                                                </div>
+                                            </div>
+                                            <div class="card-product__slider_1 slider-card-product">
+                                                <div class="slider-card-product__swiper_1 swiper">
+                                                    <div class="slider-card-product__wrapper swiper-wrapper gallery">
+                                                        <div
+                                                            class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                            <div class="slide-slider-card-product__item">
+                                                                <a href="img/cooker-hoods/cooker-hoods-3/01.jpg">
+                                                                    <img class="cloudzoom"
+                                                                        src="img/cooker-hoods/cooker-hoods-3/01.jpg"
+                                                                        data-cloudzoom="zoomImage: 'img/cooker-hoods/cooker-hoods-3/01.jpg'"
+                                                                        alt="TL G IX BL">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                            <div class="slide-slider-card-product__item">
+                                                                <a href="img/cooker-hoods/cooker-hoods-3/02.jpg">
+                                                                    <img class="cloudzoom"
+                                                                        src="img/cooker-hoods/cooker-hoods-3/02.jpg"
+                                                                        data-cloudzoom="zoomImage: 'img/cooker-hoods/cooker-hoods-3/02.jpg'"
+                                                                        alt="TL G IX BL">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                            <div class="slide-slider-card-product__item">
+                                                                <a href="img/cooker-hoods/cooker-hoods-3/03.jpg">
+                                                                    <img class="cloudzoom"
+                                                                        src="img/cooker-hoods/cooker-hoods-3/03.jpg"
+                                                                        data-cloudzoom="zoomImage: 'img/cooker-hoods/cooker-hoods-3/03.jpg'"
+                                                                        alt="TL G IX BL">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                            <div class="slide-slider-card-product__item">
+                                                                <a href="img/cooker-hoods/cooker-hoods-3/04.jpg">
+                                                                    <img class="cloudzoom"
+                                                                        src="img/cooker-hoods/cooker-hoods-3/04.jpg"
+                                                                        data-cloudzoom="zoomImage: 'img/cooker-hoods/cooker-hoods-3/04.jpg'"
+                                                                        alt="TL G IX BL">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                            <div class="slide-slider-card-product__item">
+                                                                <a href="img/cooker-hoods/cooker-hoods-3/05.jpg">
+                                                                    <img class="cloudzoom"
+                                                                        src="img/cooker-hoods/cooker-hoods-3/05.jpg"
+                                                                        data-cloudzoom="zoomImage: 'img/cooker-hoods/cooker-hoods-3/05.jpg'"
+                                                                        alt="TL G IX BL">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                            <div class="slide-slider-card-product__item">
+                                                                <a href="img/cooker-hoods/cooker-hoods-3/06.jpg">
+                                                                    <img class="cloudzoom"
+                                                                        src="img/cooker-hoods/cooker-hoods-3/06.jpg"
+                                                                        data-cloudzoom="zoomImage: 'img/cooker-hoods/cooker-hoods-3/06.jpg'"
+                                                                        alt="TL G IX BL">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                            <div class="slide-slider-card-product__item">
+                                                                <a href="img/cooker-hoods/cooker-hoods-3/07.jpg">
+                                                                    <img class="cloudzoom"
+                                                                        src="img/cooker-hoods/cooker-hoods-3/07.jpg"
+                                                                        data-cloudzoom="zoomImage: 'img/cooker-hoods/cooker-hoods-3/07.jpg'"
+                                                                        alt="TL G IX BL">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                            <div class="slide-slider-card-product__item">
+                                                                <a href="img/cooker-hoods/cooker-hoods-3/08.jpg">
+                                                                    <img class="cloudzoom"
+                                                                        src="img/cooker-hoods/cooker-hoods-3/08.jpg"
+                                                                        data-cloudzoom="zoomImage: 'img/cooker-hoods/cooker-hoods-3/08.jpg'"
+                                                                        alt="TL G IX BL">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                            <div class="slide-slider-card-product__item">
+                                                                <a href="img/cooker-hoods/cooker-hoods-3/09.jpg">
+                                                                    <img class="cloudzoom"
+                                                                        src="img/cooker-hoods/cooker-hoods-3/09.jpg"
+                                                                        data-cloudzoom="zoomImage: 'img/cooker-hoods/cooker-hoods-3/09.jpg'"
+                                                                        alt="TL G IX BL">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="slider-card-product__slide slide-slider-card-product swiper-slide">
+                                                            <div class="slide-slider-card-product__item">
+                                                                <a href="img/cooker-hoods/cooker-hoods-3/10.jpg">
+                                                                    <img class="cloudzoom"
+                                                                        src="img/cooker-hoods/cooker-hoods-3/10.jpg"
+                                                                        data-cloudzoom="zoomImage: 'img/cooker-hoods/cooker-hoods-3/10.jpg'"
+                                                                        alt="TL G IX BL">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slider-card-product__navigation">
+                                                        <div class="slider-card-product__pagination"></div>
+                                                        <div class="slider-card-product__line"></div>
+                                                        <div class="slider-card-product__btns">
+                                                            <div
+                                                                class="slider-card-product__btn slider-card-product__btn_prev slider1-card-product__btn_prev">
+                                                                <span>→</span>
+                                                            </div>
+                                                            <div
+                                                                class="slider-card-product__btn slider-card-product__btn_prev slider1-card-product__btn_next">
+                                                                <span>→</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-product__column">
+                                        <div class="card-product__info info-card-product">
+                                            <h1 class="info-card-product__title">TL G IX BL</h1>
+                                            <div class="info-card-product__text">
+                                                Телескопічна витяжка Pyramida TL G IX BL повністю вбудовується у
+                                                підвісну шафу над варильною поверхнею (або плитою), видимою залишається
+                                                лише фронтальна планка висувної каретки.
+                                            </div>
+                                            <div class="info-card-product__colors colors-info-card-product">
+                                                <div class="colors-info-card-product__title">Оберіть колір:</div>
+                                                <div class="colors-info-card-product__row">
+                                                    <ul class="colors-info-card-product__list">
+                                                        <li class="colors-info-card-product__item">
+                                                            <a style="background: #000;" data-title="Чорний" href=""
+                                                                class="colors-info-card-product__link"></a>
+                                                        </li>
+                                                        <li class="colors-info-card-product__item active">
+                                                            <span style="background: #adadad;"
+                                                                data-title="Нержавіюча сталь"
+                                                                class="colors-info-card-product__link"></span>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="colors-info-card-product__current">Нержавіюча сталь
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="info-card-product__bottom bottom-info-card-product">
+                                                <div class="bottom-info-card-product__row">
+                                                    <div class="bottom-info-card-product__column">
+                                                        <div class="info-card-product__price price-catalog-goods">
+                                                            <div class="price-catalog-goods__old-price">
+                                                                22 999 <span>грн</span>
+                                                            </div>
+                                                            <div class="price-catalog-goods__row">
+                                                                <div class="price-catalog-goods__current-price">
+                                                                    20 999 <span>грн</span></span>
+                                                                </div>
+                                                                <div
+                                                                    class="price-catalog-goods__status status-catalog-goods">
+                                                                    <span class="status-catalog-goods__available">
+                                                                        в наявності
+                                                                    </span>
+                                                                    <span class="status-catalog-goods__not-available">
+                                                                        немає в наявності
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info-card-product__btns">
+                                                            <a href=""
+                                                                class="catalog-goods__btn catalog-goods__btn_buy active">
+                                                                <span>Купити</span>
+                                                                <span></span>
+                                                            </a>
+                                                            <a href=""
+                                                                class="catalog-goods__btn catalog-goods__btn_in-basket">
+                                                                <span>У корзині</span>
+                                                                <span></span>
+                                                            </a>
+                                                            <a href=""
+                                                                class="catalog-goods__btn catalog-goods__btn_where-buy">
+                                                                <span>Де купити</span>
+                                                                <span></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottom-info-card-product__column">
+                                                        <div class="info-card-product__partners">
+                                                            <a href="">МАГАЗИНИ-ПАРТНЕРИ</a>
+                                                        </div>
+                                                        <div class="info-card-product__delivery">
+                                                            <img src="img/icons/nova-poshta.svg" alt="nova-poshta">
+                                                            <span>Доставка новою поштою</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__info-icons info-icons-product">
+                                <div class="info-icons-product__row">
+                                    <div class="info-icons-product__column">
+                                        <div class="info-icons-product__item">
+                                            <img src="img/cooker-hoods/info-icons/01.png" alt="info-icon">
+                                        </div>
+                                    </div>
+                                    <div class="info-icons-product__column">
+                                        <div class="info-icons-product__item">
+                                            <img src="img/cooker-hoods/info-icons/02.png" alt="info-icon">
+                                        </div>
+                                    </div>
+                                    <div class="info-icons-product__column">
+                                        <div class="info-icons-product__item">
+                                            <img src="img/cooker-hoods/info-icons/03.png" alt="info-icon">
+                                        </div>
+                                    </div>
+                                    <div class="info-icons-product__column">
+                                        <div class="info-icons-product__item">
+                                            <img src="img/cooker-hoods/info-icons/04.png" alt="info-icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="characteristics" class="product__characteristics characteristics">
+                            <div class="characteristics__title-block">
+                                <h3 class="characteristics__title title-h3">Характеристики</h3>
+                            </div>
+                            <div class="characteristics__row">
+                                <div class="characteristics__column">
+                                    <div class="characteristics__item">
+                                        <ul class="characteristics__list">
+                                            <li class="characteristics__list-item">
+                                                <div class="characteristics__label">Тип монтажу</div>
+                                                <div class="characteristics__value"><span>В шафу</span></div>
+                                            </li>
+                                            <li class="characteristics__list-item">
+                                                <div class="characteristics__label">Група витяжок</div>
+                                                <div class="characteristics__value"><span>Вбудовувані</span></div>
+                                            </li>
+                                            <li class="characteristics__list-item">
+                                                <div class="characteristics__label">Ширина</div>
+                                                <div class="characteristics__value"><span>50 см,</span> <span>60
+                                                        см</span></div>
+                                            </li>
+                                            <li class="characteristics__list-item">
+                                                <div class="characteristics__label">Колір</div>
+                                                <div class="characteristics__value"><span>Чорний</span></div>
+                                            </li>
+                                            <li class="characteristics__list-item">
+                                                <div class="characteristics__label">Потужність двигуна</div>
+                                                <div class="characteristics__value"><span>120 Вт</span></div>
+                                            </li>
+                                            <li class="characteristics__list-item">
+                                                <div class="characteristics__label">Режим роботи</div>
+                                                <div class="characteristics__value"><span>Відведення</span></div>
+                                            </li>
+                                            <li class="characteristics__list-item">
+                                                <div class="characteristics__label">Відведення/рециркуляція повітря
+                                                </div>
+                                                <div class="characteristics__value"><span>+/-</span></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="characteristics__column">
+                                    <div class="characteristics__item">
+                                        <ul class="characteristics__list">
+                                            <li class="characteristics__list-item">
+                                                <div class="characteristics__label">Управління</div>
+                                                <div class="characteristics__value"><span>Механічне</div>
+                                            </li>
+                                            <li class="characteristics__list-item">
+                                                <div class="characteristics__label">Освітлення</div>
+                                                <div class="characteristics__value"><span></span>LED-лампи 5 Вт х 2
+                                                </div>
+                                            </li>
+                                            <li class="characteristics__list-item">
+                                                <div class="characteristics__label">Максимальний рівень шуму</div>
+                                                <div class="characteristics__value"><span></span>68 дБ</div>
+                                            </li>
+                                            <li class="characteristics__list-item">
+                                                <div class="characteristics__label">Жировий фільтр</div>
+                                                <div class="characteristics__value"><span>Є</span></div>
+                                            </li>
+                                            <li class="characteristics__list-item">
+                                                <div class="characteristics__label">Особливості дизайну</div>
+                                                <div class="characteristics__value">
+                                                    <span>
+                                                        Ручка висувного фільтра декорована чорним склом в металевій
+                                                        рамці
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="characteristics__list-item">
+                                                <div class="characteristics__label">Діаметр вихідного отвору</div>
+                                                <div class="characteristics__value"><span>120 мм</span></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="characteristics__column">
+                                    <div class="characteristics__item">
+                                        <ul class="characteristics__list">
+                                            <li class="characteristics__list-item">
+                                                <div class="characteristics__label">Габарити упаковки (ШхГхВ)</div>
+                                                <div class="characteristics__value">
+                                                    <span>500 мм: 582х247х355,</span>
+                                                    <span>600 мм: 690x365x335</span>
+                                                </div>
+                                            </li>
+                                            <li class="characteristics__list-item">
+                                                <div class="characteristics__label">Вага в упаковці/без упаковки</div>
+                                                <div class="characteristics__value">
+                                                    <span>500 мм: 8,5 кг / 7,8 кг,</span>
+                                                    <span>600 мм: 9,5 кг, 8,5 кг</span>
+                                                </div>
+                                            </li>
+                                            <li class="characteristics__list-item">
+                                                <div class="characteristics__label">Старі номенклатурні назви</div>
+                                                <div class="characteristics__value">
+                                                    <span>TL glass 50 inox black,</span>
+                                                    <span>TL glass 60 inox black</span>
+                                                </div>
+                                            </li>
+                                            <li class="characteristics__list-item">
+                                                <div class="characteristics__label">Нові номенклатурні назви</div>
+                                                <div class="characteristics__value">
+                                                    <span>TL 50 G IX BL,</span><span>TL 50 G IX BL</span>
+                                                    <span class="br"></span>
+                                                    <span class="br"></span>
+                                                    <span class="br"></span>
+                                                    <span>*</span>
+                                                    <span>
+                                                        З 01.12.2020 року моделі витяжок з нержавіючої сталі
+                                                        випускаються в захисній плівці
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="characteristics__list-item">
+                                                <div class="characteristics__label">Продуктивність</div>
+                                                <div class="characteristics__value"><span>500-1000 м3/год</span></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="characteristics__documentation documentation-characteristics">
+                                <div class="documentation-characteristics__inner">
+                                    <div class="documentation-characteristics__body">
+                                        <div class="documentation-characteristics__image ibg">
+                                            <img src="img/catalog/documentation.jpg" alt="documentation">
+                                        </div>
+                                        <div class="documentation-characteristics__title">
+                                            Ознайомитися з документацією
+                                        </div>
+                                        <div class="documentation-characteristics__btns">
+                                            <a href="" class="documentation-characteristics__btn btn_violet">
+                                                Подивитися energy label
+                                            </a>
+                                            <a href="" class="documentation-characteristics__btn btn_violet">
+                                                Подивитися мікрофішу
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="characteristics__teh-btns teh-btns-characteristics">
+                                <div class="teh-btns-characteristics__row">
+                                    <div class="teh-btns-characteristics__column">
+                                        <div class="teh-btns-characteristics__item">
+                                            <a href="https://www.pyramida.ua/new/public/files/files/instructions_new/Manual_Pyramida_TL%20G_TL%20FG_(1100)_148x104mm_UA_RU_office.pdf"
+                                                target="_blank" class="teh-btns-characteristics__btn btn btn_yellow">
+                                                <span>Переглянути інструкцію</span><span></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="teh-btns-characteristics__column">
+                                        <div class="teh-btns-characteristics__item">
+                                            <a href=""
+                                                data-img="https://www.pyramida.ua/new/public/files/images/shemes_new/Pyramida_TL_TLwood_TLSYE.jpg"
+                                                data-model="TL G IX BL"
+                                                class="teh-btns-characteristics__btn open-modal-scheme btn btn_violet">
+                                                <span>Схема вбудовування</span><span></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="teh-btns-characteristics__column">
+                                        <div class="teh-btns-characteristics__item">
+                                            <a href=""
+                                                class="teh-btns-characteristics__btn teh-btns-characteristics__btn_compare btn btn_red">
+                                                <span>Додати до порівняння</span><span></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="description" class="product__description description-product">
+                            <div class="description-product__items">
+                                <div class="description-product__item">
+                                    <div class="description-product__content">
+                                        <div class="description-product__row">
+                                            <div class="description-product__column description-product__column_line">
+                                                <div class="description-product__line"></div>
+                                            </div>
+                                            <div class="description-product__column description-product__column_main">
+                                                <div class="description-product__title-block">
+                                                    <h3 class="description-product__title title-h3">
+                                                        Оптимальна продуктивність
+                                                    </h3>
+                                                </div>
+                                                <div class="description-product__text">
+                                                    <p>
+                                                        На максимальній швидкості продуктивність витяжки сягає 700
+                                                        м3/год. Такий показник гарантує ефективну роботу навіть у
+                                                        просторих кухнях (14-15 м2): кожні 60 хвилин повітря в
+                                                        приміщенні повністю оновиться 15 разів.
+                                                    </p>
+                                                    <p>
+                                                        Враховуйте, що для найефективнішої роботи витяжку слід умикати
+                                                        відразу ж, як починаєте готувати. Спочатку встановіть мінімальну
+                                                        швидкість роботи. Коли ж випаровування стануть помітні, збільште
+                                                        потужність.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description-product__image">
+                                        <img src="img/cooker-hoods/cooker-hoods-3/description/01.jpg"
+                                            alt="description">
+                                    </div>
+                                </div>
+                                <div class="description-product__item">
+                                    <div class="description-product__content">
+                                        <div class="description-product__row">
+                                            <div class="description-product__column description-product__column_line">
+                                                <div class="description-product__line"></div>
+                                            </div>
+                                            <div class="description-product__column description-product__column_main">
+                                                <div class="description-product__title-block">
+                                                    <h3 class="description-product__title title-h3">
+                                                        Комфортний рівень шуму: 68 дБ
+                                                    </h3>
+                                                </div>
+                                                <div class="description-product__text">
+                                                    <p>
+                                                        У режимі максимальної продуктивності рівень шуму витяжки не
+                                                        перевищує 68 дБ: до речі, такий рівень гучності вважається
+                                                        нормою для сучасних офісних приміщень. Тому доки повітря на
+                                                        кухні очищається, ви можете спокійно спілкуватися з рідними або
+                                                        відпочивати в сусідній кімнаті, не відчуваючи дискомфорту.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description-product__image">
+                                        <img src="img/cooker-hoods/cooker-hoods-3/description/02.jpg"
+                                            alt="description">
+                                    </div>
+                                </div>
+                                <div class="description-product__item">
+                                    <div class="description-product__content">
+                                        <div class="description-product__row">
+                                            <div class="description-product__column description-product__column_line">
+                                                <div class="description-product__line"></div>
+                                            </div>
+                                            <div class="description-product__column description-product__column_main">
+                                                <div class="description-product__title-block">
+                                                    <h3 class="description-product__title title-h3">
+                                                        Яку витяжку обрати? Ми допоможемо.
+                                                    </h3>
+                                                </div>
+                                                <div class="description-product__text">
+                                                    <p>
+                                                        Продукція Pyramida на ринку вже 20 років. За цей час продано
+                                                        понад 1,7 млн ​​витяжок, кожна третя модель на українських
+                                                        кухнях — нашого бренду. Ми буквально навчили українців
+                                                        користуватися витяжками. Приділяємо пріоритетну увагу аудиторії,
+                                                        збираємо фідбек і постійно вдосконалюємо свою техніку — а отже
+                                                        точно знаємо, на що важливо звернути увагу, щоб покупка стала
+                                                        розумною. А ще — ми готові ділитися своїми знаннями. <a href="">
+                                                            Читайте наш гайд, як обрати найкращу витяжку.
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description-product__image">
+                                        <img src="img/cooker-hoods/cooker-hoods-3/description/03.jpg"
+                                            alt="description">
+                                    </div>
+                                </div>
+                                <div class="description-product__item">
+                                    <div class="description-product__content">
+                                        <div class="description-product__row">
+                                            <div class="description-product__column description-product__column_line">
+                                                <div class="description-product__line"></div>
+                                            </div>
+                                            <div class="description-product__column description-product__column_main">
+                                                <div class="description-product__title-block">
+                                                    <h3 class="description-product__title title-h3">
+                                                        Управляйте швидко та легко
+                                                    </h3>
+                                                </div>
+                                                <div class="description-product__text">
+                                                    <p>
+                                                        Проста й інтуїтивно зрозуміла панель управління забезпечить
+                                                        комфорт під час експлуатації витяжки. Ергономічні механічні
+                                                        клавіші допоможуть швидко перемикати швидкості та режими роботи,
+                                                        а також умикати підсвічування й активувати таймер.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description-product__image">
+                                        <img src="img/cooker-hoods/cooker-hoods-3/description/04.jpg"
+                                            alt="description">
+                                    </div>
+                                </div>
+                                <div class="description-product__item">
+                                    <div class="description-product__content">
+                                        <div class="description-product__row">
+                                            <div class="description-product__column description-product__column_line">
+                                                <div class="description-product__line"></div>
+                                            </div>
+                                            <div class="description-product__column description-product__column_main">
+                                                <div class="description-product__title-block">
+                                                    <h3 class="description-product__title title-h3">
+                                                        Декілька швидкостей для ефективного очищення
+                                                    </h3>
+                                                </div>
+                                                <div class="description-product__text">
+                                                    <p>
+                                                        Регулюйте потужність роботи витяжки, перемикаючись між 3
+                                                        швидкісними режимами. Коли ви тільки починаєте готувати,
+                                                        використовуйте мінімальну швидкість, а при появі пару та запахів
+                                                        перемикайтеся на середню. Максимальна швидкість стане у пригоді
+                                                        при поєднанні декількох кухонних процесів, а також допоможе
+                                                        швидко провітрити кухню після закінчення готування.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description-product__image">
+                                        <img src="img/cooker-hoods/cooker-hoods-3/description/05.jpg"
+                                            alt="description">
+                                    </div>
+                                </div>
+                                <div class="description-product__item">
+                                    <div class="description-product__content">
+                                        <div class="description-product__row">
+                                            <div class="description-product__column description-product__column_line">
+                                                <div class="description-product__line"></div>
+                                            </div>
+                                            <div class="description-product__column description-product__column_main">
+                                                <div class="description-product__title-block">
+                                                    <h3 class="description-product__title title-h3">
+                                                        Зворотний клапан у комплекті
+                                                    </h3>
+                                                </div>
+                                                <div class="description-product__text">
+                                                    <p>
+                                                        Завдяки двом пелюсткам клапана витяжка буде пропускати повітря
+                                                        тільки в одному напрямку: клапан перешкоджає проникненню
+                                                        повітряних потоків і неприємних запахів з вентиляційної шахти
+                                                        назад у приміщення.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description-product__image">
+                                        <img src="img/cooker-hoods/cooker-hoods-3/description/06.jpg"
+                                            alt="description">
+                                    </div>
+                                </div>
+                                <div class="description-product__item">
+                                    <div class="description-product__content">
+                                        <div class="description-product__row">
+                                            <div class="description-product__column description-product__column_line">
+                                                <div class="description-product__line"></div>
+                                            </div>
+                                            <div class="description-product__column description-product__column_main">
+                                                <div class="description-product__title-block">
+                                                    <h3 class="description-product__title title-h3">
+                                                        Максимально чисте повітря
+                                                    </h3>
+                                                </div>
+                                                <div class="description-product__text">
+                                                    <p>
+                                                        Режим відведення максимально ефективно чистить повітря на кухні.
+                                                        Панель захоплює випари, дим і сильні запахи та виводить їх через
+                                                        вентиляційну шахту на вулицю, дозволяючи вам дихати свіжим і
+                                                        чистим повітрям.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description-product__image">
+                                        <img src="img/cooker-hoods/cooker-hoods-3/description/07.jpg"
+                                            alt="description">
+                                    </div>
+                                </div>
+                                <div class="description-product__item">
+                                    <div class="description-product__content">
+                                        <div class="description-product__row">
+                                            <div class="description-product__column description-product__column_line">
+                                                <div class="description-product__line"></div>
+                                            </div>
+                                            <div class="description-product__column description-product__column_main">
+                                                <div class="description-product__title-block">
+                                                    <h3 class="description-product__title title-h3">
+                                                        5-шаровий захист мотора
+                                                    </h3>
+                                                </div>
+                                                <div class="description-product__text">
+                                                    <p>
+                                                        Розташовані у витяжці жирові фільтри складаються з 5 найлегших
+                                                        алюмінієвих сіточок, що перешкоджають попаданню всередину
+                                                        дрібних частинок їжі та жиру. Така система фільтрації захищає
+                                                        мотор витяжки від сторонніх забруднень, завдяки чому він служить
+                                                        довше. Для легкого очищення фільтрів просто промийте їх під
+                                                        струменем води з жиророзщеплювальних мийним засобом або в
+                                                        посудомийній машині.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description-product__image">
+                                        <img src="img/cooker-hoods/cooker-hoods-3/description/08.jpg"
+                                            alt="description">
+                                    </div>
+                                </div>
+                                <div class="description-product__item">
+                                    <div class="description-product__content">
+                                        <div class="description-product__row">
+                                            <div class="description-product__column description-product__column_line">
+                                                <div class="description-product__line"></div>
+                                            </div>
+                                            <div class="description-product__column description-product__column_main">
+                                                <div class="description-product__title-block">
+                                                    <h3 class="description-product__title title-h3">
+                                                        Сертифікація в системі ISO 9001: 2015
+                                                    </h3>
+                                                </div>
+                                                <div class="description-product__text">
+                                                    <p>
+                                                        Якість і безпека витяжок Pyramida підтверджена Міжнародним
+                                                        сертифікатом ISO 9001: 2015. Це означає, що виробництво техніки
+                                                        на всіх етапах гарантовано відповідає високим вимогам визнаної у
+                                                        всьому світі системи стандартів ISO.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description-product__image">
+                                        <img src="img/cooker-hoods/cooker-hoods-3/description/09.jpg"
+                                            alt="description">
+                                    </div>
+                                </div>
+                                <div class="description-product__item">
+                                    <div class="description-product__content">
+                                        <div class="description-product__row">
+                                            <div class="description-product__column description-product__column_line">
+                                                <div class="description-product__line"></div>
+                                            </div>
+                                            <div class="description-product__column description-product__column_main">
+                                                <div class="description-product__title-block">
+                                                    <h3 class="description-product__title title-h3">
+                                                        Made in Ukraine
+                                                    </h3>
+                                                </div>
+                                                <div class="description-product__text">
+                                                    <p>
+                                                        Витяжку TL G IX BL ми виробляємо на нашому власному заводі в
+                                                        Україні. Переконайтеся в її функціональності, ергономічності та
+                                                        зручності. Як виробники української побутової техніки ми
+                                                        створюємо витяжки для нас з вами з урахуванням потреб і побажань
+                                                        наших користувачів.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description-product__image">
+                                        <img src="img/cooker-hoods/cooker-hoods-3/description/10.jpg"
+                                            alt="description">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="guarantee" class="product__guarantee guarantee-product">
+                            <div class="description-product__item">
+                                <div class="description-product__content">
+                                    <div class="description-product__row">
+                                        <div class="description-product__column description-product__column_line">
+                                            <div class="description-product__line"></div>
+                                        </div>
+                                        <div class="description-product__column description-product__column_main">
+                                            <div class="description-product__title-block">
+                                                <h3 class="description-product__title title-h3">
+                                                    Надійний вибір
+                                                </h3>
+                                            </div>
+                                            <div class="description-product__text">
+                                                <p>
+                                                    Ми докладаємо величезних зусиль, щоб Ви отримували задоволення від
+                                                    використання нашої продукції, і допоможемо з рішенням будь-яких
+                                                    непередбачених ситуацій, що стосуються техніки Pyramida.
+                                                </p>
+                                                <p>
+                                                    Вся техніка ретельно перевіряється, тестується і строго
+                                                    контролюється службою контролю якості компанії Pyramida Technik.
+                                                    Саме тому на всю вбудовану техніку Pyramida Ви отримуєте три роки
+                                                    повної гарантії офіційного виробника – безкоштовно! А для товарів,
+                                                    придбаних в нашому інтернет магазині PyramidaUa в 2022 році, цей
+                                                    термін збільшується до 4 років повного гарантійного обслуговування!*
+                                                </p>
+                                                <p>
+                                                    Ви зможете користуватися всіма перевагами нашого гарантійного
+                                                    обслуговування з індивідуальним супроводом незалежно від того, у
+                                                    якому магазині придбали товар.
+                                                </p>
+                                                <p>
+                                                    *Акція діє з 1.01 по 31.12.2022 року. Сертифікат на додатковий рік
+                                                    повного гарантійного обслуговування ви отримуєте разом з технікою
+                                                    при доставці..
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description-product__image">
+                                    <img src="img/cooker-hoods/cooker-hoods-3/description/11.jpg" alt="guarantee">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="video" class="product__video video-product">
+                            <div class="video-product__title-block">
+                                <h3 class="video-product__title title-h3">Відеоогляди</h3>
+                            </div>
+                            <div class="video-product__row">
+                                <div class="video-product__column">
+                                    <div class="video-product__panel panel-video-product">
+                                        <div class="panel-video-product__title">
+                                            Телескопічна витяжка Pyramida TL G IX : відеоогляд
+                                        </div>
+                                        <div class="panel-video-product__text"></div>
+                                        <div class="panel-video-product__galarry galarry-panel-video-product">
+                                            <div class="galarry-panel-video-product__body">
+                                                <div class="galarry-panel-video-product__slider">
+                                                    <div class="galarry-panel-video-product__swiper swiper">
+                                                        <div
+                                                            class="galarry-panel-video-product__wrapper swiper-wrapper">
+                                                            <div
+                                                                class="galarry-panel-video-product__slide slide-galarry-panel-video-product swiper-slide">
+                                                                <div class="slide-galarry-panel-video-product__item">
+                                                                    <a href=""
+                                                                        data-galarry_title="Телескопічна витяжка Pyramida TL G IX : відеоогляд-1"
+                                                                        data-galarry_text=""
+                                                                        data-galarry_video="https://www.youtube.com/embed/zyHxWHvAYjk?feature=player_detailpage&amp;wmode=transparent"
+                                                                        class="slide-galarry-panel-video-product__link">
+                                                                        <img src="https://img.youtube.com/vi/zyHxWHvAYjk/1.jpg"
+                                                                            alt="">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="galarry-panel-video-product__slide slide-galarry-panel-video-product swiper-slide">
+                                                                <div class="slide-galarry-panel-video-product__item">
+                                                                    <a href=""
+                                                                        data-galarry_title="Телескопічна витяжка Pyramida TL G IX : відеоогляд-2"
+                                                                        data-galarry_text=""
+                                                                        data-galarry_video="https://www.youtube.com/embed/zyHxWHvAYjk?feature=player_detailpage&amp;wmode=transparent"
+                                                                        class="slide-galarry-panel-video-product__link">
+                                                                        <img src="https://img.youtube.com/vi/zyHxWHvAYjk/1.jpg"
+                                                                            alt="">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="galarry-panel-video-product__slide slide-galarry-panel-video-product swiper-slide">
+                                                                <div class="slide-galarry-panel-video-product__item">
+                                                                    <a href=""
+                                                                        data-galarry_title="Телескопічна витяжка Pyramida TL G IX : відеоогляд-3"
+                                                                        data-galarry_text=""
+                                                                        data-galarry_video="https://www.youtube.com/embed/zyHxWHvAYjk?feature=player_detailpage&amp;wmode=transparent"
+                                                                        class="slide-galarry-panel-video-product__link">
+                                                                        <img src="https://img.youtube.com/vi/zyHxWHvAYjk/1.jpg"
+                                                                            alt="">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="galarry-panel-video-product__bottom">
+                                                <div class="galarry-panel-video-product__navigation">
+                                                    <div
+                                                        class="galarry-panel-video-product__btn galarry-panel-video-product__btn_prev">
+                                                        <span>→</span>
+                                                    </div>
+                                                    <div
+                                                        class="galarry-panel-video-product__btn galarry-panel-video-product__btn_next">
+                                                        <span>→</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="video-product__column">
+                                    <div class="video-product__player">
+                                        <iframe
+                                            src="https://www.youtube.com/embed/zyHxWHvAYjk?feature=player_detailpage&amp;wmode=transparent"
+                                            frameborder="0" allowfullscreen=""></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-product__more more-video-product">
+                                <a href="news.html" class="more-video-product__btn btn-all">
+                                    <span class="btn-all__arrows">
+                                        <span>→</span>
+                                        <span>→</span>
+                                    </span>
+                                    <span class="btn-all__text">БІЛЬШЕ ВІДЕО НА НАШОМУ КАНАЛІ</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product__recommendation recommendation-product">
+                            <div class="recommendation-product__title-block">
+                                <h3 class="recommendation-product__title title-h3">РЕКОМЕНДУЄМО В КОМПЛЕКТІ</h3>
+                            </div>
+                            <div class="recommendation-product__body">
+                                <div class="recommendation-product__slider">
+                                    <div class="recommendation-product__swiper swiper">
+                                        <div class="recommendation-product__wrapper swiper-wrapper">
+                                            <div
+                                                class="recommendation-product__slide slide-recommendation-product swiper-slide">
+                                                <div class="catalog-goods__item">
+                                                    <div
+                                                        class="recommendation-product__smile recommendation-product__smile_red">
+                                                    </div>
+                                                    <div class="catalog-goods__image-block">
+                                                        <a href="" class="catalog-goods__images">
+                                                            <img src="img/cooker-hoods/cooker-hoods-3/01.jpg"
+                                                                alt="cooker-hood" class="catalog-goods__img">
+                                                            <img src="img/cooker-hoods/cooker-hoods-3/02.jpg"
+                                                                alt="cooker-hood" class="catalog-goods__img-hover">
+                                                        </a>
+                                                    </div>
+                                                    <div class="catalog-goods__body">
+                                                        <a href="" class="catalog-goods__name">TL G IX BL</a>
+                                                    </div>
+                                                    <div class="catalog-goods__bottom">
+                                                        <div class="catalog-goods__price price-catalog-goods">
+                                                            <div class="price-catalog-goods__old-price">
+                                                                22 999 <span>грн</span>
+                                                            </div>
+                                                            <div class="price-catalog-goods__row">
+                                                                <div class="price-catalog-goods__current-price">
+                                                                    20 999 <span>грн</span></span>
+                                                                </div>
+                                                                <div
+                                                                    class="price-catalog-goods__status status-catalog-goods">
+                                                                    <span class="status-catalog-goods__available">
+                                                                        в наявності
+                                                                    </span>
+                                                                    <span class="status-catalog-goods__not-available">
+                                                                        немає в наявності
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="catalog-goods__btns">
+                                                            <a href=""
+                                                                class="catalog-goods__btn catalog-goods__btn_buy active">
+                                                                <span>Купити</span>
+                                                                <span></span>
+                                                            </a>
+                                                            <a href=""
+                                                                class="catalog-goods__btn catalog-goods__btn_in-basket">
+                                                                <span>У корзині</span>
+                                                                <span></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="recommendation-product__slide slide-recommendation-product swiper-slide">
+                                                <div class="catalog-goods__item">
+                                                    <div
+                                                        class="recommendation-product__smile recommendation-product__smile_yellow">
+                                                    </div>
+                                                    <div class="catalog-goods__image-block">
+                                                        <a href="" class="catalog-goods__images">
+                                                            <img src="img/cooker-hoods/cooker-hoods-3/01.jpg"
+                                                                alt="cooker-hood" class="catalog-goods__img">
+                                                            <img src="img/cooker-hoods/cooker-hoods-3/02.jpg"
+                                                                alt="cooker-hood" class="catalog-goods__img-hover">
+                                                        </a>
+                                                    </div>
+                                                    <div class="catalog-goods__body">
+                                                        <a href="" class="catalog-goods__name">TL G IX BL</a>
+                                                    </div>
+                                                    <div class="catalog-goods__bottom">
+                                                        <div class="catalog-goods__price price-catalog-goods">
+                                                            <div class="price-catalog-goods__old-price">
+                                                                22 999 <span>грн</span>
+                                                            </div>
+                                                            <div class="price-catalog-goods__row">
+                                                                <div class="price-catalog-goods__current-price">
+                                                                    20 999 <span>грн</span></span>
+                                                                </div>
+                                                                <div
+                                                                    class="price-catalog-goods__status status-catalog-goods">
+                                                                    <span class="status-catalog-goods__available">
+                                                                        в наявності
+                                                                    </span>
+                                                                    <span class="status-catalog-goods__not-available">
+                                                                        немає в наявності
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="catalog-goods__btns">
+                                                            <a href=""
+                                                                class="catalog-goods__btn catalog-goods__btn_buy active">
+                                                                <span>Купити</span>
+                                                                <span></span>
+                                                            </a>
+                                                            <a href=""
+                                                                class="catalog-goods__btn catalog-goods__btn_in-basket">
+                                                                <span>У корзині</span>
+                                                                <span></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="recommendation-product__slide slide-recommendation-product swiper-slide">
+                                                <div class="catalog-goods__item">
+                                                    <div
+                                                        class="recommendation-product__smile recommendation-product__smile_green">
+                                                    </div>
+                                                    <div class="catalog-goods__image-block">
+                                                        <a href="" class="catalog-goods__images">
+                                                            <img src="img/cooker-hoods/cooker-hoods-3/01.jpg"
+                                                                alt="cooker-hood" class="catalog-goods__img">
+                                                            <img src="img/cooker-hoods/cooker-hoods-3/02.jpg"
+                                                                alt="cooker-hood" class="catalog-goods__img-hover">
+                                                        </a>
+                                                    </div>
+                                                    <div class="catalog-goods__body">
+                                                        <a href="" class="catalog-goods__name">TL G IX BL</a>
+                                                    </div>
+                                                    <div class="catalog-goods__bottom">
+                                                        <div class="catalog-goods__price price-catalog-goods">
+                                                            <div class="price-catalog-goods__old-price">
+                                                                22 999 <span>грн</span>
+                                                            </div>
+                                                            <div class="price-catalog-goods__row">
+                                                                <div class="price-catalog-goods__current-price">
+                                                                    20 999 <span>грн</span></span>
+                                                                </div>
+                                                                <div
+                                                                    class="price-catalog-goods__status status-catalog-goods">
+                                                                    <span class="status-catalog-goods__available">
+                                                                        в наявності
+                                                                    </span>
+                                                                    <span class="status-catalog-goods__not-available">
+                                                                        немає в наявності
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="catalog-goods__btns">
+                                                            <a href=""
+                                                                class="catalog-goods__btn catalog-goods__btn_buy active">
+                                                                <span>Купити</span>
+                                                                <span></span>
+                                                            </a>
+                                                            <a href=""
+                                                                class="catalog-goods__btn catalog-goods__btn_in-basket">
+                                                                <span>У корзині</span>
+                                                                <span></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="recommendation-product__slide slide-recommendation-product swiper-slide">
+                                                <div class="catalog-goods__item">
+                                                    <div
+                                                        class="recommendation-product__smile recommendation-product__smile_red">
+                                                    </div>
+                                                    <div class="catalog-goods__image-block">
+                                                        <a href="" class="catalog-goods__images">
+                                                            <img src="img/cooker-hoods/cooker-hoods-3/01.jpg"
+                                                                alt="cooker-hood" class="catalog-goods__img">
+                                                            <img src="img/cooker-hoods/cooker-hoods-3/02.jpg"
+                                                                alt="cooker-hood" class="catalog-goods__img-hover">
+                                                        </a>
+                                                    </div>
+                                                    <div class="catalog-goods__body">
+                                                        <a href="" class="catalog-goods__name">TL G IX BL</a>
+                                                    </div>
+                                                    <div class="catalog-goods__bottom">
+                                                        <div class="catalog-goods__price price-catalog-goods">
+                                                            <div class="price-catalog-goods__old-price">
+                                                                22 999 <span>грн</span>
+                                                            </div>
+                                                            <div class="price-catalog-goods__row">
+                                                                <div class="price-catalog-goods__current-price">
+                                                                    20 999 <span>грн</span></span>
+                                                                </div>
+                                                                <div
+                                                                    class="price-catalog-goods__status status-catalog-goods">
+                                                                    <span class="status-catalog-goods__available">
+                                                                        в наявності
+                                                                    </span>
+                                                                    <span class="status-catalog-goods__not-available">
+                                                                        немає в наявності
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="catalog-goods__btns">
+                                                            <a href=""
+                                                                class="catalog-goods__btn catalog-goods__btn_buy active">
+                                                                <span>Купити</span>
+                                                                <span></span>
+                                                            </a>
+                                                            <a href=""
+                                                                class="catalog-goods__btn catalog-goods__btn_in-basket">
+                                                                <span>У корзині</span>
+                                                                <span></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="recommendation-product__navigation">
+                                            <div class="recommendation-product__btn recommendation-product__btn_prev">
+                                                <span>←</span>
+                                            </div>
+                                            <div class="recommendation-product__pagination"></div>
+                                            <div class="recommendation-product__btn recommendation-product__btn_next">
+                                                <span>→</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__body">
+            <div class="footer__row">
+                <div class="footer__column column-footer footer__column_1">
+                    <div class="column-footer__inner">
+                        <a href="index.html" class="footer__logo">
+                            <img src="img/logo.svg" alt="logo">
+                        </a>
+                        <div class="footer__socials socials-footer">
+                            <ul class="socials-footer__list">
+                                <li class="socials-footer__item socials-footer__item_facebook">
+                                    <a href="" class="socials-footer__link">
+                                        <img src="img/icons/socials/facebook.svg" alt="facebook">
+                                    </a>
+                                </li>
+                                <li class="socials-footer__item socials-footer__item_youtube">
+                                    <a href="" class="socials-footer__link">
+                                        <img src="img/icons/socials/youtube.svg" alt="youtube">
+                                    </a>
+                                </li>
+                                <li class="socials-footer__item socials-footer__item_instagram">
+                                    <a href="" class="socials-footer__link">
+                                        <img src="img/icons/socials/instagram.svg" alt="instagram">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__copyright" data-da="footer__bottom, 0, 992">
+                            Copyright © 2023 Pyramida.<br> Усі права захищені
+                        </div>
+                        <div class="footer__pay-system pay-system-footer" data-da="footer__bottom, 1, 992">
+                            <ul class="pay-system-footer__list">
+                                <li class="pay-system-footer__item pay-system-footer__item_mastercard">
+                                    <img src="img/pay-system/mastercard.svg" alt="mastercard">
+                                </li>
+                                <li class="pay-system-footer__item pay-system-footer__item_visa">
+                                    <img src="img/pay-system/visa.svg" alt="visa">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__column footer__column_2">
+                    <div class="column-footer__inner">
+                        <nav class="footer__menu menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Про бренд</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Новини</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Сервіс</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Де купити</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Партнерство</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link menu-footer__link_double-text">
+                                        <span>Доставка та оплата</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__column footer__column_3">
+                    <div class="column-footer__inner">
+                        <nav class="footer__menu menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Витяжки</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Варильні поверхні</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Духові шафи</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Посудомийні машини</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Мікрохвильові печі</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">
+                                        <span>Аксесуари</span>
+                                        <span>→</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__column footer__column_4">
+                    <div class="column-footer__inner">
+                        <a href="tel:0800604463" class="footer__phone">0 800 604 463</a>
+                        <div class="footer__info-text">Гаряча лінія з питань сервісу</div>
+                        <div class="footer__text">Дзвоніть пн-пт з 10:00 до 17:00</div>
+                        <div class="footer__small-text">
+                            Дзвінки зі стаціонарних та мобільних<br> телефонів в межах України безкоштовні
+                        </div>
+                        <div class="footer__btns">
+                            <a href="/?Event=DownloadFile&amp;file=catalog"
+                                class="footer__btn footer__btn_download btn">
+                                <span>завантажити каталог</span>
+                            </a>
+                            <a href="" class="footer__btn footer__btn_write open-modal-feedback btn">
+                                <span>написати нам</span>
+                            </a>
+                        </div>
+                        <div class="scroll-top"></div>
+                        <div class="footer__bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="js/cloudzoom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
