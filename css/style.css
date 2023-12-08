@@ -6494,9 +6494,6 @@ input {
   transform: rotate(90deg);
 }
 
-.slider1-card-product__btn_prev {
-  transform: rotate(180deg) translate(0, -2px);
-}
 .slider1-card-product__btn_next {
   margin: 0 0 0 10px;
 }
