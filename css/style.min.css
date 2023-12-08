@@ -8889,12 +8889,6 @@ input {
 .delivery-contacts-order__item.checked .delivery-contacts-order__dropdown-block_area {
   display: block;
 }
-.delivery-contacts-order__item.checked .delivery-contacts-order__dropdown-block_city {
-  display: block;
-}
-.delivery-contacts-order__item.checked .delivery-contacts-order__dropdown-block_department {
-  display: block;
-}
 .delivery-contacts-order__item_department {
   margin: 0 0 40px 0;
 }
